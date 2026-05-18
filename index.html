@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="EvolveOne helps small service businesses get a clean website, simple systems, and automation—so enquiries, bookings, and follow-ups run smoothly."
+    />
+
+    <title>EvolveOne — Websites, Systems &amp; Automation for Small Businesses</title>
+
+    <link rel="canonical" href="https://evolveone.ai/" />
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EvolveOne" />
+    <meta property="og:title" content="EvolveOne — Websites, Systems &amp; Automation for Small Businesses" />
+    <meta
+      property="og:description"
+      content="Clean website, simple systems, and automation—built for small service businesses that want to get organised and grow."
+    />
+    <meta property="og:url" content="https://evolveone.ai/" />
+    <meta property="og:image" content="https://evolveone.ai/macbook%20mock%20up.png" />
+    <meta property="og:image:alt" content="EvolveOne website preview on a laptop" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EvolveOne — Websites, Systems &amp; Automation for Small Businesses" />
+    <meta
+      name="twitter:description"
+      content="Clean website, simple systems, and automation—built for small service businesses that want to get organised and grow."
+    />
+    <meta name="twitter:image" content="https://evolveone.ai/macbook%20mock%20up.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "EvolveOne",
+        "url": "https://evolveone.ai/",
+        "email": "info@evolveone.ai",
+        "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
+        "sameAs": ["https://www.linkedin.com/in/lloyd-dwaah-026531268/"]
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="site.css" />
+    <style>
+      :root {
+        --line: rgba(17, 17, 17, 0.08);
+      }
+
+      .evo-marquee {
+        position: relative;
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+        mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+      }
+      .evo-marquee-track {
+        display: flex;
+        gap: 18px;
+        width: max-content;
+        animation: evoMarquee 38s linear infinite;
+        will-change: transform;
+      }
+      .evo-marquee:hover .evo-marquee-track {
+        animation-play-state: paused;
+      }
+      @keyframes evoMarquee {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .evo-marquee-track {
+          animation: none !important;
+        }
+      }
+
+      .evo-mock {
+        flex: 0 0 auto;
+        width: 260px;
+        border-radius: 24px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.8);
+      }
+      .evo-mock img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+      }
+
+      .evo-scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .evo-scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="site-body antialiased text-[#111]">
+
+    <a
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:shadow"
+      href="#main"
+      >Skip to content</a
+    >
+
+    <header
+      id="siteHeader"
+      class="sticky top-0 z-50 border-b border-black/[0.06] bg-white/85 backdrop-blur-md transition-shadow duration-300"
+    >
+      <div class="border-b border-black/[0.06] bg-[#0071e3] text-white">
+        <div class="site-wrap">
+          <div class="flex items-center justify-center py-2 text-center text-[12px] leading-relaxed">
+            <a
+              href="/get-started"
+              class="underline decoration-white/35 underline-offset-[3px] transition-colors hover:decoration-white/70"
+            >
+              Check your eligibility for a free website
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="site-wrap">
+        <div class="flex h-14 items-center">
+          <a href="/" class="text-[15px] font-semibold tracking-tight text-[#111]">EvolveOne</a>
+
+          <nav aria-label="Primary" class="hidden md:block mx-auto">
+            <ul class="flex items-center justify-center gap-8">
+              <li>
+                <a
+                  class="inline-flex items-center rounded-full px-3 py-1.5 text-[13px] font-normal text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                  href="/founder"
+                  >Founder</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center rounded-full px-3 py-1.5 text-[13px] font-normal text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                  href="/pricing"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center rounded-full px-3 py-1.5 text-[13px] font-normal text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                  href="/fit"
+                  >Fit</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center rounded-full px-3 py-1.5 text-[13px] font-normal text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                  href="/results"
+                  >Results</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center rounded-full px-3 py-1.5 text-[13px] font-normal text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                  href="/get-started"
+                  >Get Started</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="ml-auto md:hidden">
+            <button
+              id="mobileBtn"
+              type="button"
+              class="inline-flex items-center justify-center rounded-full border border-black/[0.08] bg-white px-4 py-2 text-[13px] text-[#111] transition hover:bg-black/[0.02]"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+              aria-label="Open menu"
+            >
+              <span aria-hidden="true" class="inline-flex items-center justify-center">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 7H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden pb-4">
+          <div class="rounded-2xl border border-black/[0.08] bg-white px-4 py-3">
+            <div class="grid gap-1 text-center">
+              <a
+                class="inline-flex items-center justify-center rounded-full px-4 py-2 text-[13px] text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                href="/founder"
+                >Founder</a
+              >
+              <a
+                class="inline-flex items-center justify-center rounded-full px-4 py-2 text-[13px] text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                href="/pricing"
+                >Pricing</a
+              >
+              <a
+                class="inline-flex items-center justify-center rounded-full px-4 py-2 text-[13px] text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                href="/fit"
+                >Fit</a
+              >
+              <a
+                class="inline-flex items-center justify-center rounded-full px-4 py-2 text-[13px] text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                href="/results"
+                >Results</a
+              >
+              <a
+                class="inline-flex items-center justify-center rounded-full px-4 py-2 text-[13px] text-[#555] transition-colors duration-200 hover:bg-black/[0.04] hover:text-[#111]"
+                href="/get-started"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero-gradient spotlight-top fade-up">
+        <div class="site-wrap">
+          <div class="pt-28 sm:pt-40 pb-28 sm:pb-40 text-center">
+            <h1
+              class="reveal mx-auto max-w-4xl text-5xl sm:text-7xl font-semibold tracking-tight text-[#111] leading-[1.08]"
+              data-reveal
+              data-reveal-delay="1"
+            >
+              We build free websites for small businesses.
+            </h1>
+            <p
+              class="reveal mx-auto mt-6 max-w-2xl text-[17px] sm:text-[19px] leading-[1.65] text-[#555]"
+              data-reveal
+              data-reveal-delay="2"
+            >
+              Check your eligibility today
+            </p>
+
+            <div class="reveal mt-10 flex items-center justify-center" data-reveal data-reveal-delay="3">
+              <a
+                href="/get-started"
+                class="btn-primary focus:outline-none focus:ring-4 focus:ring-[#0071e3]/20"
+              >
+                Get started
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section-y border-t border-black/[0.06]">
+        <div class="site-wrap">
+          <div class="mx-auto max-w-3xl text-center px-2 sm:px-0">
+            <h2 class="reveal text-4xl sm:text-5xl font-semibold tracking-tight text-[#111]" data-reveal data-reveal-delay="1">
+              Built from scratch. Ready fast.
+            </h2>
+            <p class="reveal mt-6 text-[17px] sm:text-[19px] leading-[1.65] text-[#555]" data-reveal data-reveal-delay="2">
+              Custom website, bookings and systems. All set up around your business without the usual delays or costs.
+            </p>
+          </div>
+
+          <div class="mockup-feature" aria-label="Benefits with laptop mockup">
+            <div class="mockup-feature__grid">
+              <p class="mockup-feature__phrase mockup-feature__phrase--time" data-reveal data-reveal-delay="1">Save Time</p>
+              <p class="mockup-feature__phrase mockup-feature__phrase--costs" data-reveal data-reveal-delay="2">Cut Costs</p>
+
+              <img
+                src="macbook%20mock%20up.png"
+                alt="Website preview on a laptop"
+                class="mockup-feature__mock reveal-below"
+                data-reveal
+                data-reveal-delay="4"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <p class="mockup-feature__phrase mockup-feature__phrase--scale" data-reveal data-reveal-delay="3">Scale Faster</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-y">
+        <div class="site-wrap">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2
+              class="reveal text-4xl sm:text-5xl font-semibold tracking-tight text-[#111]"
+              data-reveal
+              data-reveal-delay="1"
+            >
+              Everything in one place
+            </h2>
+          </div>
+
+          <div class="mt-16 sm:mt-20 grid gap-12 sm:gap-16 sm:grid-cols-3 sm:items-start">
+            <article class="reveal text-left sm:pt-0 border-t border-black/[0.06] sm:border-0 pt-10 sm:pt-0" data-reveal data-reveal-delay="1">
+              <h3 class="text-lg font-semibold tracking-tight text-[#111]">Website</h3>
+              <p class="mt-4 text-[16px] leading-[1.65] text-[#555]">So people actually understand what you do</p>
+            </article>
+
+            <article class="reveal text-left border-t border-black/[0.06] sm:border-0 pt-10 sm:pt-0" data-reveal data-reveal-delay="2">
+              <h3 class="text-lg font-semibold tracking-tight text-[#111]">Systems</h3>
+              <p class="mt-4 text-[16px] leading-[1.65] text-[#555]">So you’re not chasing messages and bookings</p>
+            </article>
+
+            <article class="reveal text-left border-t border-black/[0.06] sm:border-0 pt-10 sm:pt-0" data-reveal data-reveal-delay="3">
+              <h3 class="text-lg font-semibold tracking-tight text-[#111]">Automation</h3>
+              <p class="mt-4 text-[16px] leading-[1.65] text-[#555]">So things get done without you thinking about it</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Website mockups band (under Everything in one place) -->
+      <section class="pb-20 sm:pb-28">
+        <div class="site-wrap">
+          <div class="reveal evo-marquee" data-reveal data-reveal-delay="1">
+            <div class="evo-marquee-track" id="mockTrack"></div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          var files = [
+            "website%20mocks/arran.webp",
+            "website%20mocks/circle.webp",
+            "website%20mocks/clamby.webp",
+            "website%20mocks/luxegloss.webp",
+            "website%20mocks/pipely.webp",
+            "website%20mocks/royal-place.webp",
+            "website%20mocks/sastrue.webp",
+            "website%20mocks/shutterbug.webp",
+            "website%20mocks/smartbio.webp",
+            "website%20mocks/sync.webp",
+            "website%20mocks/the-seed-hub.webp",
+            "website%20mocks/trakker.webp",
+            "website%20mocks/yofood.webp",
+          ];
+
+          var track = document.getElementById("mockTrack");
+          if (!track) return;
+
+          function makeItem(src) {
+            var wrap = document.createElement("div");
+            wrap.className = "evo-mock";
+
+            var img = document.createElement("img");
+            img.loading = "lazy";
+            img.decoding = "async";
+            img.alt = "Website mockup";
+            img.src = src;
+
+            img.addEventListener("error", function () {
+              wrap.remove();
+              syncVisibility();
+            });
+
+            wrap.appendChild(img);
+            return wrap;
+          }
+
+          function syncVisibility() {
+            var marquee = track.closest(".evo-marquee");
+            if (!marquee) return;
+            marquee.classList.toggle("hidden", !track.querySelector(".evo-mock"));
+          }
+
+          // Duplicate for a seamless loop, but rotate the second run so it doesn't feel repetitive.
+          var mid = Math.ceil(files.length / 2);
+          var rotated = files.slice(mid).concat(files.slice(0, mid));
+          var runA = files.slice();
+          var runB = rotated.slice();
+
+          runA.concat(runB).forEach(function (src) {
+            track.appendChild(makeItem(src));
+          });
+        })();
+      </script>
+
+      <section id="learn" class="section-y border-t border-black/[0.06]">
+        <div class="site-wrap">
+          <div class="mx-auto max-w-3xl text-center px-2 sm:px-0">
+            <h2
+              class="reveal text-4xl sm:text-5xl font-semibold tracking-tight text-[#111]"
+              data-reveal
+              data-reveal-delay="1"
+            >
+              Start with a free website
+            </h2>
+            <p
+              class="reveal mt-6 text-[17px] sm:text-[19px] leading-[1.65] text-[#555]"
+              data-reveal
+              data-reveal-delay="2"
+            >
+              No upfront cost. Just a clean, professional setup.
+            </p>
+            <div class="reveal mt-10 flex items-center justify-center" data-reveal data-reveal-delay="3">
+              <a
+                href="/get-started"
+                class="btn-primary focus:outline-none focus:ring-4 focus:ring-[#0071e3]/20"
+              >
+                Get started
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="border-t border-black/[0.06] py-12">
+        <div class="site-wrap">
+          <div class="flex flex-col items-center justify-center gap-5 text-center">
+            <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[13px] font-medium">
+              <a
+                href="Privacy%20Policy.pdf"
+                class="text-[#555] underline decoration-black/20 underline-offset-4 transition hover:text-[#111] hover:decoration-black/35"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="Terms%20and%20Conditions.pdf"
+                class="text-[#555] underline decoration-black/20 underline-offset-4 transition hover:text-[#111] hover:decoration-black/35"
+              >
+                Terms &amp; Conditions
+              </a>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-3">
+              <a
+                href="https://www.instagram.com/evolveoneai/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/[0.08] bg-white text-[#555] transition hover:bg-black/[0.02] hover:text-[#111] focus:outline-none focus:ring-4 focus:ring-[#0071e3]/20"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M16.5 2h-9A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/evolveoneai"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/[0.08] bg-white text-[#555] transition hover:bg-black/[0.02] hover:text-[#111] focus:outline-none focus:ring-4 focus:ring-[#0071e3]/20"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M14 8.5V7.2c0-.9.6-1.2 1.1-1.2H17V3h-2.3C12.7 3 11 4.5 11 7v1.5H9V12h2v9h3v-9h2.3l.7-3.5H14Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/evolveoneai"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="X"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/[0.08] bg-white text-[#555] transition hover:bg-black/[0.02] hover:text-[#111] focus:outline-none focus:ring-4 focus:ring-[#0071e3]/20"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M18.5 3H21l-6.7 7.7L22 21h-6.2l-4.9-6.4L5.2 21H3l7.3-8.4L2 3h6.4l4.4 5.9L18.5 3Zm-1.1 16h1.4L7.7 4.9H6.2L17.4 19Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/evolveoneai/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/[0.08] bg-white text-[#555] transition hover:bg-black/[0.02] hover:text-[#111] focus:outline-none focus:ring-4 focus:ring-[#0071e3]/20"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M6.5 9.5H3.8V21h2.7V9.5Zm.2-3.5a1.6 1.6 0 1 1-3.2 0 1.6 1.6 0 0 1 3.2 0ZM21 21h-2.7v-5.9c0-1.4-.5-2.4-1.8-2.4-1 0-1.6.7-1.8 1.3-.1.2-.1.6-.1.9V21H12V9.5h2.6v1.6c.3-.7 1.2-1.7 3-1.7 2.2 0 3.9 1.4 3.9 4.5V21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="space-y-1 text-[13px] leading-relaxed text-[#666]">
+              <p class="font-medium text-[#111]">Contact</p>
+              <p><a class="underline decoration-black/20 underline-offset-4 hover:decoration-black/35" href="mailto:info@evolveone.ai">info@evolveone.ai</a></p>
+              <p>5 Brayford Square, London, United Kingdom, E1 0SG</p>
+            </div>
+
+            <p class="text-[13px] leading-relaxed text-[#666]">EvolveOneAI Limited</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div id="cookieBanner" class="cookie-banner hidden" role="region" aria-label="Cookie notice">
+      <div class="cookie-banner__inner">
+        <p class="cookie-banner__text">
+          We use cookies to improve your experience, analyse traffic, and support site functionality. By continuing to use this site, you agree to our use
+          of cookies. See our <a href="Privacy%20Policy.pdf">Privacy Policy</a> for more details.
+        </p>
+        <div class="cookie-banner__actions" role="group" aria-label="Cookie actions">
+          <button id="cookieAccept" type="button" class="btn-primary">Accept</button>
+          <button id="cookieDecline" type="button" class="btn-secondary">Decline</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        var header = document.getElementById("siteHeader");
+        var btn = document.getElementById("mobileBtn");
+        var menu = document.getElementById("mobileMenu");
+        var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var cookieBanner = document.getElementById("cookieBanner");
+        var cookieAccept = document.getElementById("cookieAccept");
+        var cookieDecline = document.getElementById("cookieDecline");
+        var cookieKey = "evo_cookie_consent";
+
+        function syncHeaderShadow() {
+          if (!header) return;
+          var scrolled = window.scrollY > 8;
+          header.classList.toggle("shadow-sm", scrolled);
+          header.classList.toggle("shadow-black/5", scrolled);
+        }
+
+        syncHeaderShadow();
+        window.addEventListener("scroll", syncHeaderShadow, { passive: true });
+
+        // Reveal animations on scroll (smooth; works both directions)
+        if (!prefersReducedMotion && "IntersectionObserver" in window) {
+          var els = document.querySelectorAll("[data-reveal], .reveal");
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                entry.target.classList.toggle("is-visible", entry.isIntersecting);
+              });
+            },
+            { root: null, rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+          );
+
+          els.forEach(function (el) {
+            el.classList.add("reveal");
+            io.observe(el);
+          });
+        } else {
+          var fallbackEls = document.querySelectorAll("[data-reveal], .reveal");
+          fallbackEls.forEach(function (el) {
+            el.classList.add("is-visible");
+          });
+        }
+
+        if (btn && menu) {
+          function setOpen(open) {
+            btn.setAttribute("aria-expanded", open ? "true" : "false");
+            menu.classList.toggle("hidden", !open);
+          }
+
+          btn.addEventListener("click", function () {
+            var open = btn.getAttribute("aria-expanded") === "true";
+            setOpen(!open);
+          });
+
+          menu.addEventListener("click", function (e) {
+            var t = e.target;
+            if (t && t.tagName === "A") setOpen(false);
+          });
+
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") setOpen(false);
+          });
+        }
+
+        (function () {
+          if (!cookieBanner) return;
+          try {
+            var existing = window.localStorage.getItem(cookieKey);
+            if (existing === "accepted" || existing === "declined") return;
+          } catch (e) {}
+
+          cookieBanner.classList.remove("hidden");
+
+          function choose(value) {
+            try {
+              window.localStorage.setItem(cookieKey, value);
+            } catch (e) {}
+            cookieBanner.classList.add("hidden");
+          }
+
+          if (cookieAccept) cookieAccept.addEventListener("click", function () { choose("accepted"); });
+          if (cookieDecline) cookieDecline.addEventListener("click", function () { choose("declined"); });
+        })();
+
+      })();
+    </script>
+
+    <script src="https://bot.orimon.ai/deploy/index.js" tenantId="3a0d2493-64fe-4a4a-b495-d434ed0b7be2"></script>
+  </body>
+</html>

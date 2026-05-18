@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a call</title>
+    <meta name="description" content="Book a call using our calendar." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="top" aria-label="Top bar">
+        <div id="brandName" class="brand">EvolveOne</div>
+      </div>
+
+      <section class="shell" aria-label="Calendar">
+        <header class="hero">
+          <div class="kicker">Calendar</div>
+          <h1 id="headline">Book a call</h1>
+          <p id="subhead" class="sub">Pick a time that works. You’ll get a confirmation instantly.</p>
+        </header>
+
+        <div class="grid" aria-label="Booking grid">
+          <div class="col col--dates" aria-label="Select a day">
+            <div class="label-row">
+              <div class="label">Select a day</div>
+              <div id="tzLabel" class="tz">Europe/London</div>
+            </div>
+            <div class="card card--scroll">
+              <div id="dateList" class="date-list" role="list" aria-label="Available days"></div>
+            </div>
+          </div>
+
+          <div class="col col--times" aria-label="Select a time">
+            <div class="label-row">
+              <div class="label">Select a time</div>
+              <div id="selectedDayLabel" class="tz"></div>
+            </div>
+            <div class="card card--scroll">
+              <div id="timeList" class="time-list" role="list" aria-label="Available times"></div>
+            </div>
+          </div>
+
+          <div class="col col--form" aria-label="Booking details">
+            <div class="card">
+              <div class="label">Your details</div>
+              <form id="bookingForm" class="form" novalidate>
+                <input type="text" name="honey" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+                <label class="field">
+                  <span>Name</span>
+                  <input name="name" type="text" required autocomplete="name" />
+                </label>
+
+                <label class="field">
+                  <span>Email</span>
+                  <input name="email" type="email" required autocomplete="email" />
+                </label>
+
+                <label class="field">
+                  <span>Notes (optional)</span>
+                  <textarea name="notes" rows="3" placeholder="What would you like to discuss?"></textarea>
+                </label>
+
+                <input id="selectedStart" name="start" type="hidden" />
+
+                <button id="submitBtn" type="submit" class="btn-primary" disabled>Confirm booking</button>
+
+                <p id="status" class="status" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+

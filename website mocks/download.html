@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4HRCJB');</script>
+<!-- End Google Tag Manager -->
+<style>
+.ui-link-helper svg {
+	width: 22px;
+}
+
+.ui-link-helper {
+	position: fixed;
+	right: 0;
+	top: calc(50vh - 111px);
+	display: flex;
+	flex-direction: column;
+	background: white;
+	width: 45px;
+	cursor: pointer;
+	border-left: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 5px 40px rgb(0 0 0 / 7%);
+	-moz-box-shadow: 0 5px 40px rgba(0,0,0,7%);
+	box-shadow: 0 5px 40px rgb(0 0 0 / 7%);
+	padding: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid #eaeaea;
+	border-right: 0;
+  z-index: 9999999;
+}
+
+.ui-link-helper .ui-tooltip {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(.7);
+	-moz-transform: scale(.7);
+	-ms-transform: scale(.7);
+	transform: scale(.7);
+	position: absolute;
+	background-color: #fff;
+	font-size: 13px;
+	margin: 0;
+	padding: 0px 20px;
+	font-family: inherit;
+	width: auto;
+	font-weight: 500;
+	line-height: 36px;
+	letter-spacing: .1px;
+	right: 10px;
+	top: 4px;
+  border-radius:3px;
+	white-space: nowrap;
+	-webkit-box-shadow: 0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+	-moz-box-shadow:0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+	box-shadow: 0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+	-moz-transition: all .3s cubic-bezier(0.64,-0.09, 0.13, 1.15);
+	-o-transition: all .3s cubic-bezier(0.64,-0.09, 0.13, 1.15);
+	transition: all .3s cubic-bezier(0.64,-0.09, 0.13, 1.15);
+  color:#7db710;
+}
+
+.ui-link-helper .ui-tooltip-link:hover .ui-tooltip {
+	opacity: 1;
+	right: 60px;
+	visibility: visible;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.ui-link-helper .ui-tooltip-link {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 44px;
+	align-items: center;
+  transition: all .3s ease-in;
+}
+
+.ui-link-helper .ui-tooltip span{
+	display: block;
+	position: absolute;
+	right: -5px;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid #fff;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+}
+
+.ui-link-helper .ui-tooltip-link + .ui-tooltip-link {
+	border-top: 1px solid #eaeaea;
+}
+
+.ui-link-helper .ui-tooltip-link svg {
+	height: 20px;
+}
+.ui-tooltip-link:hover {
+	background: rgb(83 45 245 / 5%);
+}
+.ui-tooltip-link:hover svg path {
+	fill: #7db710;
+}
+
+@media(max-width: 767px) {
+  .ui-link-helper {
+	display: none;
+  }
+}
+</style>
+<title>YoRide &#8211; UiCore Pro WordPress Theme</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="YoRide &raquo; Feed" href="https://uicore.pro/templates/yoride/feed/" />
+<link rel="alternate" type="application/rss+xml" title="YoRide &raquo; Comments Feed" href="https://uicore.pro/templates/yoride/comments/feed/" />
+<link rel="preload" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Semibold.woff2" as="font" type="font/woff" crossorigin="anonymous"> <link rel="preload" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous"> <link rel="preload" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous"> <script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/uicore.pro\/templates\/yoride\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='e-animation-rotateIn-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/lib/animations/styles/rotateIn.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInLeft-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInRight-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='e-animation-grow-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='elementor-post-29-css' href='https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/elementor/css/post-29.css?ver=1757680248' media='all' />
+<link rel='stylesheet' media='print' onload="this.onload=null;this.media='all'" id='uicore_global-css' href='https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/uicore-global.css?ver=7734' media='all' />
+<style id='uicore-critical-styles-inline-css'>
+body,html{margin:0;position:relative}html{-webkit-tap-highlight-color:#fff0;-webkit-font-smoothing:antialiased;text-size-adjust:none;font-feature-settings:"kern";font-kerning:normal;max-width:100vw;overflow-x:hidden;text-rendering:optimizelegibility}:focus{outline:none}*{box-sizing:border-box}a{text-decoration:none;transition:all .2s cubic-bezier(.68,.01,.58,.75)}a strong{color:inherit}p{margin-bottom:1em;margin-top:0}.uicore-body-content{max-width:100vw;overflow-x:clip;position:relative;width:100%}.uicore-no-editor>div,.uicore-post-content{width:100%}.elementor-html .uicore-content{clear:both}.uicore-container{margin:0 auto}.uicore.uicore-box .uicore.uicore-container{padding-left:10px!important;padding-right:10px!important}.uicore-section{position:relative}.uicore-section .uicore-container{display:-webkit-box;display:-ms-flexbox;display:flex;margin-left:auto;margin-right:auto;position:relative}.uicore-section.elementor-section-stretched{position:relative;width:100%}.elementor-section.elementor-section-boxed:not(.elementor-inner-section)>.elementor-container,.uicore-section.uicore-box:not(.elementor-inner-section) .uicore-header-wrapper>.uicore-container,.uicore-section.uicore-box:not(.elementor-inner-section)>.uicore-container{width:95%}@media (min-width:1025px){.uicore-navigation-wrapper,.uicore_hide_desktop{display:none}.uicore-only-mobile{display:none!important}}@media (max-width:1025px){.uicore_hide_mobile{display:none!important}.uicore-navbar:not(.uicore-box) .uicore-header-wrapper{padding-left:10px!important;padding-right:10px!important}}@media (max-width:1024px){.uicore-section .uicore-container{-ms-flex-wrap:wrap;flex-wrap:wrap}}body button.uicore-ham,body button.uicore-ham:focus,body button.uicore-ham:hover{-webkit-appearance:none;appearance:none;border:none;cursor:pointer;padding:0;-webkit-tap-highlight-color:#fff0;align-items:center;background:#fff0 0 0;box-shadow:none;flex-flow:row wrap;justify-content:center}button.uicore-ham{padding:0 0 0 20px!important}.uicore-ham .bar,.uicore-ham .bars{align-items:inherit;display:flex;flex-flow:column nowrap;justify-content:inherit}.uicore-ham .bars{float:right;height:15px;-webkit-transform:rotate(0);transform:rotate(0);transition:all .3s cubic-bezier(.23,1,.32,1);width:20px}.uicore-ham .bar{border-radius:50em;height:2px;margin-bottom:4.4px;position:relative;transition:all .45s cubic-bezier(.23,1,.32,1);width:20px}.uicore-ham .bar:first-child,.uicore-ham .bar:last-child{opacity:0;transition:all .3s cubic-bezier(.23,1,.32,1);visibility:hidden}.uicore-ham .bar:first-child{transform:translate3d(0,-3px,0)}.uicore-ham .bar:last-child{margin-bottom:0;transform:translate3d(0,3px,0)}.uicore-ham .bar:nth-child(2){margin-right:auto;-webkit-transform:rotate(45deg);transform:rotate(45deg);transition-delay:.1s;transition-timing-function:cubic-bezier(.23,1,.32,1);width:22px}.uicore-ham .bar:nth-child(2):before{background-color:inherit;border-radius:inherit;content:"";display:inline-block;height:100%;left:0;position:absolute;top:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);transition:inherit;width:100%}body:not(.uicore-mobile-nav-show) .uicore-ham .bars{-webkit-transform:none;transform:none;transition-delay:0s}body:not(.uicore-mobile-nav-show) .uicore-ham .bar:first-child,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:last-child,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:nth-child(2){opacity:1;-webkit-transform:none;transform:none;transition:all .3s ease,background-color .15s;visibility:visible}body:not(.uicore-mobile-nav-show) .uicore-ham .bar:first-child:after,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:first-child:before,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:last-child:after,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:last-child:before,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:nth-child(2):after,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:nth-child(2):before{-webkit-transform:rotate(0) translate(0);transform:rotate(0) translate(0)}body:not(.uicore-mobile-nav-show) .uicore-ham .bar:first-child,body:not(.uicore-mobile-nav-show) .uicore-ham .bar:last-child{transition-delay:.15s}body:not(.uicore-mobile-nav-show) .uicore-ham .bar:nth-child(2){width:16px}.uicore-mobile-head-right{align-items:center;display:flex;gap:20px}.uicore-mobile-head-right>[data-elementor-type=uicore-tb]{display:none}.uicore-navigation-wrapper{background:#fff;height:100%;left:0;max-width:100vw;opacity:0;pointer-events:none;position:fixed!important;right:0;top:0;z-index:99999999}.uicore-navigation-wrapper .uicore-container{padding:0 10px}.uicore-navigation-wrapper .uicore-menu-container{height:100%;padding:0;position:relative}.uicore-navigation-wrapper .uicore-nav{justify-content:flex-start!important}.uicore-navigation-wrapper .uicore-menu .menu-item,.uicore-navigation-wrapper .uicore-menu .menu-item:hover{position:static}.uicore-navigation-wrapper .uicore-menu .sub-menu{display:none}.uicore-navigation-wrapper .uicore-menu .sub-menu a{width:100%}.uicore-navigation-wrapper .uicore-navigation-content{display:flex;flex-direction:column;overflow:hidden}.uicore-navigation-wrapper .uicore-navigation-content .uicore-extra{flex-direction:column;margin-bottom:30px}.uicore-navigation-wrapper .uicore-navigation-content .uicore-extra .uicore-btn{margin:20px auto 0;text-align:center;width:calc(95% - 20px)}.uicore-navigation-wrapper .uicore-navigation-content .uicore-extra .uicore-socials{margin-left:0}.uicore-navigation-wrapper .uicore-navigation-content .uicore-extra .uicore-socials .uicore-social-icon{padding:0 15px}.uicore-navigation-wrapper .uicore-mobile.uicore-active>li{transition:opacity .4s cubic-bezier(.22,1,.36,1) 0!important;-webkit-transition:opacity .4s cubic-bezier(.22,1,.36,1) 0!important;-moz-transition:opacity .4s cubic-bezier(.22,1,.36,1) 0!important;-ms-transition:opacity .4s cubic-bezier(.22,1,.36,1) 0!important;-o-transition:opacity .4s cubic-bezier(.22,1,.36,1) 0!important;will-change:opacity!important}.uicore-navigation-wrapper .uicore-menu-container ul .menu-item-has-children>a:after{content:"";font-family:uicore-icons;font-size:16px;height:16px;opacity:.5;position:absolute;right:10px;top:50%;transform:rotate(-90deg) translate3d(50%,-50%,0);transition:all .5s cubic-bezier(.22,1,.36,1) .3s;width:16px}.uicore-navigation-wrapper .uicore-menu-container ul .menu-item .back a{font-size:70%;letter-spacing:.2em;opacity:.75;text-transform:uppercase}.uicore-navigation-wrapper .uicore-menu-container ul .menu-item{display:block!important}.uicore-navigation-wrapper .uicore-menu-container ul .menu-item>a{color:inherit;display:block;margin:0 auto;position:relative}.uicore-navigation-wrapper .uicore-menu-container ul .menu-item:not(.uicore-visible){opacity:0;transform:translate3d(0,40px,0)}.uicore-navigation-wrapper .uicore-menu-container ul .menu-item.uicore-visible{transition:all .4s ease}.uicore-navigation-wrapper .uicore-menu-container ul.uicore-animating a:after{opacity:0!important;transition:all .2s cubic-bezier(.22,1,.36,1) 0s!important;-webkit-transition:all .2s cubic-bezier(.22,1,.36,1) 0s!important;-moz-transition:all .2s cubic-bezier(.22,1,.36,1) 0s!important;-ms-transition:all .2s cubic-bezier(.22,1,.36,1) 0s!important;-o-transition:all .2s cubic-bezier(.22,1,.36,1) 0s!important}.uicore-overflow-hidden{overflow:hidden!important}.uicore-mobile-menu-overflow{max-height:100vh}.ui-custom-tap{margin-left:0!important;max-width:70%!important;position:absolute!important;width:70%}.ui-custom-tap:after{display:none!important}.uicore-cart-icon.uicore_hide_desktop{margin-left:auto;margin-right:20px}.uicore-cart-icon.uicore_hide_desktop .uicore-icon-holder{font-size:16px;padding-right:0!important}.uicore-branding{height:var(--uicore-header--logo-h)}.uicore-navbar .uicore-branding{margin:var(--uicore-header--logo-padding) 0}.uicore-custom-area .uicore-hca ul.uicore-menu li.menu-item>a,.uicore-navbar.uicore-h-classic .uicore-simple-megamenu>.sub-menu,.uicore-navbar:not(.uicore-left-menu) .uicore-nav-menu ul.uicore-menu li.menu-item>a{padding-left:var(--uicore-header--menu-spaceing);padding-right:var(--uicore-header--menu-spaceing)}.uicore-h-classic.uicore-navbar .uicore-menu>.menu-item-has-children>a:after{right:var(--uicore-header--menu-spaceing)}.uicore-custom-area .uicore-hca .uicore-icon-wrapp,.uicore-custom-area .uicore-hca p,.uicore-drawer-toggle .ui-text,.uicore-mobile-menu-wrapper .uicore-menu .menu-item>a,.uicore-nav-menu .uicore-nav .sub-menu:not(.uicore-megamenu)>li a,.uicore-nav-menu .uicore-nav .uicore-menu>.menu-item>a,.uicore-navbar .uicore-btn{color:inherit;font-family:var(--uicore-header--menu-typo-f,"Inter");font-size:var(--uicore-header--menu-typo-s,"10px");font-style:var(--uicore-header--menu-typo-st,"normal");font-weight:var(--uicore-header--menu-typo-w,"600");letter-spacing:var(--uicore-header--menu-typo-ls,"-0.027em");line-height:var(--uicore-header--menu-typo-h,"1.2");text-transform:var(--uicore-header--menu-typo-t,"none")}.uicore-nav-menu a:hover{color:inherit}.uicore-custom-area .uicore-menu .menu-item a,.uicore-mobile-menu-wrapper .uicore-menu-container ul .menu-item-has-children:after{line-height:var(--uicore-header--menu-typo-h,"1.2")}.uicore-custom-area,.uicore-custom-area .uicore-hca,.uicore-custom-area .uicore-hca .uicore-icon-wrapp,.uicore-custom-area .uicore-hca a,.uicore-custom-area .uicore-hca p,.uicore-custom-area-mobile .uicore-hca,.uicore-custom-area-mobile .uicore-hca p,.uicore-extra a,.uicore-header-wrapper .uicore-link,.uicore-mobile-menu-wrapper .uicore-menu li.menu-item,.uicore-nav-menu .uicore-nav .sub-menu:not(.uicore-megamenu)>li a,.uicore-nav-menu li,.uicore-navbar.uicore-left-menu .uicore-custom-area .uicore-hca *{color:var(--uicore-header--menu-typo-c,"#070707")}.uicore-custom-area .uicore-hca a:hover,.uicore-drawer-toggle:hover,.uicore-extra a:hover,.uicore-header-wrapper .uicore-link:hover,.uicore-mobile-menu-wrapper .uicore-menu li.current-menu-item>a,.uicore-mobile-menu-wrapper .uicore-menu li.menu-item:hover,.uicore-nav-menu .uicore-menu li:hover,.uicore-navbar .uicore-nav-menu .uicore-menu li.current-menu-item>a{color:var(--uicore-header--menu-typo-ch,"#070707")}.uicore-navbar .uicore-extra .uicore-icon-holder,.uicore-navbar .uicore-extra .uicore-search-btn,.uicore-navbar .uicore-extra .uicore-social-icon{font-size:clamp(16px,var(--uicore-header--menu-typo-s,"10px"),21px)}.uicore-navbar .uicore-extra .uicore-icon-holder:before,.uicore-navbar .uicore-extra .uicore-search-btn:before,.uicore-navbar .uicore-extra .uicore-social-icon:before{font-size:110%}.uicore-navigation-wrapper span.bar{background:var(--uicore-header--menu-typo-c,"#070707")!important}.uicore-navbar .uicore-ham{height:var(--uicore-header--logo-h);width:var(--uicore-header--logo-h)}.uicore-transparent:not(.uicore-scrolled):not(.uicore-transparent-color) .uicore-btn.uicore-inverted{background:#fff;color:var(--uicore-headline-color)}.uicore-custom-area h1,.uicore-custom-area h2,.uicore-custom-area h3,.uicore-custom-area h4,.uicore-custom-area h5,.uicore-custom-area h6{margin:0}.uicore-menu .ui-menu-item-wrapper{position:relative}.uicore-menu>li>a .custom-menu-desc{font-size:.73em;font-weight:700;line-height:1em;opacity:.6;position:absolute;right:0;top:-9px}.menu-item-has-children ul .custom-menu-desc{display:block;font-size:.82em;font-weight:400;margin-top:.6em;max-width:fit-content;opacity:.7;white-space:break-spaces}.ui-menu-img{margin-right:.8em;max-height:2em;vertical-align:middle;width:auto}.uicore-menu li:not(.ui-has-description)>a svg{margin-right:.3em;vertical-align:middle}.uicore-menu li:not(.ui-has-description)>a svg circle,.uicore-menu li:not(.ui-has-description)>a svg path{stroke-width:1.7}.uicore-menu li:not(.ui-has-description)>a span+svg{margin-left:.3em;margin-right:0}.ui-badge{border-radius:4px;color:var(--ui-badge-color,currentColor);display:inline-block;font-size:clamp(10px,.7em,18px);font-weight:700;letter-spacing:.05em;line-height:1em;margin-left:1em;padding:.6em .9em;position:relative;text-transform:uppercase;vertical-align:middle;white-space:nowrap}.ui-badge:before{background:var(--ui-badge-color,currentColor);border-radius:inherit;bottom:0;content:"";display:inline-block;left:0;opacity:.125;position:absolute;right:0;top:0}.uicore-menu>li.ui-icon-right.menu-item-has-children>a span+svg{margin-left:0;margin-right:.4em}.uicore-shrink .uicore-branding,.uicore-shrink .uicore-nav a{transition:line-height .3s ease-out,color .3s ease-out,margin .3s ease-out!important;will-change:line-height,color,margin!important}.uicore-custom-area-mobile,.uicore-mobile-main,.uicore-mobile-second{display:none}nav.uicore-container.uicore{position:unset}.uicore-navbar{z-index:11}.uicore-navbar .uicore-header-wrapper{background-clip:padding-box;position:relative;top:0;transition:all .4s ease;will-change:unset}.uicore-navbar .uicore-header-wrapper:before{bottom:0;content:"";height:var(--ui-bg-height,100%);left:0;position:absolute;right:0;top:0;transition:opacity .3s ease-in;transition:all .2s cubic-bezier(.16,.72,.23,1.06);will-change:opacity;z-index:-1}.uicore-navbar.uicore-shrink:before{transition:all .3s ease-in .25s}.uicore-navbar.uicore-sticky{position:sticky;top:0;width:100%}.uicore-navbar.uicore-sticky:before{bottom:0}.uicore-navbar.uicore-transparent,.uicore-navbar.uicore-transparent-color{max-width:100vw;width:100%}.uicore-navbar.uicore-transparent .uicore-header-wrapper:before,.uicore-navbar.uicore-transparent .uicore-main,.uicore-navbar.uicore-transparent .uicore-mobile-main,.uicore-navbar.uicore-transparent-color .uicore-header-wrapper:before,.uicore-navbar.uicore-transparent-color .uicore-main,.uicore-navbar.uicore-transparent-color .uicore-mobile-main{opacity:0}.uicore-navbar.uicore-transparent .uicore-mobile-second,.uicore-navbar.uicore-transparent .uicore-second,.uicore-navbar.uicore-transparent-color .uicore-mobile-second,.uicore-navbar.uicore-transparent-color .uicore-second,.uicore-navbar.uicore-transparent-color.uicore-scrolled .uicore-header-wrapper:before,.uicore-navbar.uicore-transparent-color.uicore-scrolled .uicore-main,.uicore-navbar.uicore-transparent-color.uicore-scrolled .uicore-mobile-main,.uicore-navbar.uicore-transparent-color.uicore-transparent-color .uicore-header-wrapper:before,.uicore-navbar.uicore-transparent-color.uicore-transparent-color .uicore-main,.uicore-navbar.uicore-transparent-color.uicore-transparent-color .uicore-mobile-main,.uicore-navbar.uicore-transparent.uicore-scrolled .uicore-header-wrapper:before,.uicore-navbar.uicore-transparent.uicore-scrolled .uicore-main,.uicore-navbar.uicore-transparent.uicore-scrolled .uicore-mobile-main,.uicore-navbar.uicore-transparent.uicore-transparent-color .uicore-header-wrapper:before,.uicore-navbar.uicore-transparent.uicore-transparent-color .uicore-main,.uicore-navbar.uicore-transparent.uicore-transparent-color .uicore-mobile-main{opacity:1}.uicore-navbar.uicore-transparent-color.uicore-scrolled .uicore-mobile-second,.uicore-navbar.uicore-transparent-color.uicore-scrolled .uicore-second,.uicore-navbar.uicore-transparent-color.uicore-transparent-color .uicore-mobile-second,.uicore-navbar.uicore-transparent-color.uicore-transparent-color .uicore-second,.uicore-navbar.uicore-transparent.uicore-scrolled .uicore-mobile-second,.uicore-navbar.uicore-transparent.uicore-scrolled .uicore-second,.uicore-navbar.uicore-transparent.uicore-transparent-color .uicore-mobile-second,.uicore-navbar.uicore-transparent.uicore-transparent-color .uicore-second{opacity:0}.uicore-navbar:not(.uicore-transparent) .uicore-mobile-second,.uicore-navbar:not(.uicore-transparent) .uicore-second{display:none}.uicore-navbar:not(.uicore-left-menu) .uicore-branding{padding-right:20px}.uicore-navbar .uicore-logo-pill img{width:auto}.uicore-navbar .uicore-branding{position:relative}.uicore-navbar .uicore-branding a{height:inherit;transition:none}.uicore-navbar .uicore-branding a .uicore-logo{bottom:0;height:inherit;left:0;max-width:unset;position:absolute;right:0;top:0;transition:all .2s cubic-bezier(.68,.01,.58,.75);width:auto}.uicore-navbar .uicore-branding a .uicore-logo.uicore-main{position:relative}.uicore-navbar li>a{display:block;transition:all .2s cubic-bezier(.68,.01,.58,.75)}.uicore-navbar:not(.uicore-left-menu) li.menu-item{display:inline-block}.uicore-navbar .uicore ul{list-style:none;margin:0;padding:0}.uicore-navbar .uicore ul.sub-menu:not(.uicore-megamenu) li{display:block}.uicore-navbar .uicore ul.sub-menu:not(.uicore-megamenu) li a{padding:8px 25px}.uicore-navbar nav{align-items:center;display:flex;justify-content:space-between}.uicore-navbar nav .uicore-menu{display:flex}.uicore-navbar .uicore-nav,.uicore-navbar .uicore-nav-menu{display:flex!important;flex:1;justify-content:flex-end}.uicore-navbar .uicore-nav .uicore-menu>.menu-item-has-children.uicore-edge>.sub-menu,.uicore-navbar .uicore-nav-menu .uicore-menu>.menu-item-has-children.uicore-edge>.sub-menu{left:auto;right:0}.uicore-navbar .uicore-nav .uicore,.uicore-navbar .uicore-nav-menu .uicore{display:block}.uicore-navbar .sub-menu:hover,.uicore-navbar nav .menu-item-has-children:hover>.sub-menu{opacity:1;pointer-events:all;transform:none!important}.uicore-navbar nav .menu-item-has-children>a{position:relative}.uicore-navbar nav .menu-item-has-children>a:after{content:"";font-family:uicore-icons;font-size:12px;position:absolute;right:0;top:0}.uicore-navbar nav .menu-item-has-children .menu-item-has-children{position:relative}.uicore-navbar nav .menu-item-has-children .menu-item-has-children a:after{right:20px;top:calc(50% - 7px);transform:rotate(-90deg)}.uicore-navbar nav .menu-item-has-children .sub-menu .menu-item-has-children.uicore-edge>.sub-menu{left:-100%}.uicore-navbar nav .menu-item-has-children .sub-menu .menu-item-has-children>.sub-menu{left:100%;top:-22px}.uicore-navbar nav .menu-item-has-children .sub-menu .menu-item-has-children:hover>.sub-menu{display:table;opacity:1}.uicore-navbar nav.uicore ul.sub-menu{border-radius:var(--ui-radius-sm);opacity:0;pointer-events:none;position:absolute;will-change:opacity,transform;z-index:10}.uicore-navbar nav.uicore ul.sub-menu,.uicore-navbar nav.uicore ul.sub-menu:not(.uicore-megamenu){box-shadow:0 0 0 1px rgb(0 0 0 / .02),0 2px 35px 0 rgb(0 0 0 / .04);display:flex;flex-direction:column;min-width:280px}.uicore-navbar nav.uicore ul.sub-menu:not(.uicore-megamenu){padding:22px 0}.uicore-navbar nav.uicore ul.sub-menu:not(.uicore-megamenu) a{color:inherit!important;line-height:1.3}.uicore-navbar .uicore-extra{align-items:center;display:flex!important}.uicore-navbar .uicore-extra .uicore-btn{transition:all .2s cubic-bezier(.68,.01,.58,.75)!important}.uicore-navbar .uicore-extra .uicore-search-btn{cursor:pointer;display:inline-block}.uicore-navbar #uicore-site-header-cart .uicore-icon-holder{display:inline-block}.uicore-navbar #uicore-site-header-cart .uicore-icon-holder:before{content:"";cursor:pointer;display:inline-block;font-family:uicore-icons;height:15px;width:15px}.uicore-navbar #uicore-site-header-cart #uicore-count-update{display:inline-block;font-size:70%;font-weight:600;vertical-align:top}.uicore-menu-left #uicore-page{display:grid;grid-template-columns:300px auto}.uicore-menu-left #uicore-page .uicore-navbar .uicore-branding a .uicore-logo{left:50%;margin-left:-50px}.uicore-menu-left #uicore-page nav{align-content:flex-end;align-items:flex-start;flex-direction:column;flex-wrap:nowrap;height:100%;padding:20px 0;position:fixed;text-align:center;width:300px}.uicore-menu-left #uicore-page nav div{align-items:center;padding:0 2em;width:100%}.uicore-menu-left #uicore-page nav div .uicore ul{display:flex;flex-direction:column}.uicore-menu-left #uicore-page nav div .uicore ul a{display:block;line-height:1;width:100%}.uicore-menu-left #uicore-page nav div.uicore-extra{align-content:flex-end;align-items:flex-start;flex-direction:column;flex-wrap:nowrap;text-align:center}.uicore-navbar a.uicore-btn{align-self:center}.uicore-custom-area{display:flex}.uicore-custom-area .uicore-hca{display:flex;transition:all .25s cubic-bezier(.42,0,.29,1.16)}.uicore-custom-area .uicore-hca p{margin-bottom:0}.uicore-custom-area .uicore-hca a{line-height:inherit;transition:color .25s cubic-bezier(.42,0,.29,1.16);will-change:color}.uicore-custom-area form{display:flex}.uicore-nav-menu>[data-elementor-type=uicore-tb]{align-items:center;display:flex}.uicore-cta-wrapper{display:flex}.uicore-menu-focus .uicore-menu li a{transition-timing-function:cubic-bezier(0,0,.2,1)}.uicore-left-menu .uicore-menu{flex-direction:column}.uicore-h-classic .uicore-simple-megamenu>.sub-menu{flex-direction:row!important;white-space:nowrap}.uicore-h-classic .uicore-simple-megamenu>.sub-menu .sub-menu{background:#fff0;box-shadow:none!important;display:block!important;left:0!important;min-width:120px!important;opacity:.7!important;padding:10px 0 3px!important;position:relative!important;top:0!important;transform:matrix(1,0,0,1,0,0)!important}.uicore-h-classic .uicore-simple-megamenu>.sub-menu .menu-item-has-children>a:after{display:none}.uicore-h-classic .uicore-simple-megamenu>.sub-menu:hover .sub-menu{margin-top:0}.menu-item-has-megamenu.custom-width{position:relative}.uicore-megamenu{background-color:transparent!important;box-shadow:none!important;left:0;max-width:var(--uicore-max-width,100%)!important;padding:0!important;width:100vw!important}.uicore-megamenu .uicore-container{padding:0}.container-width .uicore-megamenu>.elementor{margin:0 auto!important}.uicore-nav-menu .uicore-nav .uicore-menu>.menu-item-has-children>a .ui-menu-item-wrapper{margin-right:10px}.uicore-h-classic.uicore-navbar .uicore-menu>.menu-item-has-children>a:after{margin-right:-10px;top:2px}.ui-menu-item-wrapper{grid-area:1/2/2/3;vertical-align:middle;white-space:nowrap}.uicore-link{transition:color .25s cubic-bezier(.42,0,.29,1.16);will-change:color}.ui-menu-item-wrapper .ui-badge{font-size:clamp(9px,.6em,18px);margin-top:-4px}.uicore-navigation-wrapper .uicore-menu .sub-menu .elementor-element a{width:auto}@media (min-width:1025px){body .uicore-mobile-head-left,body .uicore-mobile-head-right{display:none!important}.uicore-is-ham .uicore-mobile-menu-wrapper .uicore-custom-area .uicore-hca .uicore-icon-wrapp,.uicore-is-ham .uicore-mobile-menu-wrapper .uicore-custom-area .uicore-hca p,.uicore-navbar.uicore-left-menu .uicore-custom-area .uicore-hca .uicore-icon-wrapp,.uicore-navbar.uicore-left-menu .uicore-custom-area .uicore-hca p{font-family:var(--uicore-typography--p-f,"Inter");font-size:var(--uicore-typography--p-s,"10px");font-style:var(--uicore-typography--p-st,"normal");font-weight:var(--uicore-typography--p-w,"600");letter-spacing:var(--uicore-typography--p-ls,"-0.027em");line-height:var(--uicore-typography--p-h,"1.2");opacity:.6;text-transform:var(--uicore-typography--p-t,"none")}.uicore-is-ham .uicore-mobile-menu-wrapper .uicore-custom-area .uicore-hca p.uicore-hca-title,.uicore-navbar.uicore-left-menu .uicore-custom-area .uicore-hca p.uicore-hca-title{font-family:var(--uicore-typography--h4-f,"Inter");font-size:var(--uicore-typography--h4-s,"10px");font-style:var(--uicore-typography--h4-st,"normal");font-weight:var(--uicore-typography--h4-w,"600");letter-spacing:var(--uicore-typography--h4-ls,"-0.027em");line-height:var(--uicore-typography--h4-h,"1.2");opacity:1;text-transform:var(--uicore-typography--h4-t,"none")}.uicore-simple-megamenu.uicore-full>ul{justify-content:center;left:0;right:0}.uicore-simple-megamenu.uicore-full_contained>ul{left:0;right:0}.uicore-simple-megamenu.uicore-full_contained>ul>li:first-child{margin-left:calc((100vw - var(--ui-container-size))/2 - var(--uicore-header--menu-spaceing))}.uicore-simple-megamenu.uicore-full_contained>ul>li:last-child{margin-right:calc((100vw - var(--ui-container-size))/2 - var(--uicore-header--menu-spaceing))}.uicore-navbar:not(.uicore-box) .uicore-header-wrapper nav{padding:0 var(--uicore-header--wide-spacing)}.uicore-navbar .uicore-extra{gap:25px}.uicore-nav-menu{flex:1}.menu-item.back{display:none!important}.uicore-is-ham .uicore-custom-area .uicore-hca{margin-left:0}.uicore-cta-wrapper a{padding:clamp(14px,.8em,18px) clamp(18px,1.8em,36px)}}@media (max-width:1025px){.uicore-navigation-wrapper .uicore-menu-container .uicore-menu{position:absolute;right:0;top:0;width:100%}.uicore-navigation-wrapper .uicore-menu-container ul{padding:0}.uicore-navigation-wrapper .uicore-menu-container ul li.menu-item>a{max-width:95%;padding:15px 10px!important}.uicore-mobile-menu-wrapper .uicore-menu-container{flex:0 auto;overflow:hidden auto}.uicore-navbar .uicore-branding a .uicore-logo.uicore-mobile-main{position:relative}.ui-has-description .custom-menu-desc,.ui-has-description .ui-menu-item-wrapper{line-height:1.4}.uicore-mobile-head-right>[data-elementor-type=uicore-tb]{display:block!important}.ui-a-dsmm-slide .uicore-navigation-wrapper .uicore-menu .sub-menu{left:auto;opacity:1;position:absolute;top:0;width:100%;z-index:9}.ui-a-dsmm-slide .uicore-menu .sub-menu.uicore-active{display:block;right:-100%}.ui-a-dsmm-expand .bdt-navbar-dropdown{position:relative}.uicore-mobile-menu-wrapper .uicore-custom-area{padding:20px 0 0}.uicore-mobile-menu-wrapper .uicore-hca{margin-bottom:1em;text-align:center}.uicore-mobile-menu-wrapper .uicore-hca:last-child{margin-bottom:0}.uicore-custom-area{display:block;margin:0 auto}.uicore-custom-area .uicore-hca li a{padding:0 10px!important}.uicore-custom-area .uicore-hca li:first-child a{padding-left:0!important}.uicore-custom-area .uicore-hca li:last-child a{padding-right:0!important}.ui-a-dsmm-expand .uicore-navigation-wrapper .uicore-menu-container ul .menu-item-has-children>a:after{content:"+";display:inline-block;font-family:inherit;font-size:calc(var(--uicore-header--menu-typo-s, "10px")*1.3);height:auto;padding:15px 10px!important;top:-5px;transform:none;width:auto}.ui-a-dsmm-expand .uicore-navigation-wrapper .uicore-menu-container ul .ui-expanded:after{content:"-"!important}.ui-a-dsmm-expand .uicore-navigation-wrapper .uicore-menu-container ul .sub-menu{background:hsl(0 0% 49% / .05);box-shadow:inset 0 5px 10px -15px #000}.uicore-asside-cart .woocommerce a.button:not(.add_to_cart_button):not(.product_type_grouped){padding:13px}.uicore-mobile-menu-wrapper .uicore-custom-area .uicore-hca .uicore-icon-wrapp,.uicore-mobile-menu-wrapper .uicore-custom-area .uicore-hca p{font-family:var(--uicore-typography--p-f,"Inter");font-size:var(--uicore-typography--p-s,"10px");font-style:var(--uicore-typography--p-st,"normal");font-weight:var(--uicore-typography--p-w,"600");letter-spacing:var(--uicore-typography--p-ls,"-0.027em");line-height:var(--uicore-typography--p-h,"1.2");opacity:.6;text-transform:var(--uicore-typography--p-t,"none")}.uicore-mobile-menu-wrapper .uicore-custom-area .uicore-hca p.uicore-hca-title{font-family:var(--uicore-typography--h4-f,"Inter");font-size:var(--uicore-typography--h4-s,"10px");font-style:var(--uicore-typography--h4-st,"normal");font-weight:var(--uicore-typography--h4-w,"600");letter-spacing:var(--uicore-typography--h4-ls,"-0.027em");line-height:var(--uicore-typography--h4-h,"1.2");opacity:1;text-transform:var(--uicore-typography--h4-t,"none")}.uicore-navbar:not(.uicore-box) .uicore-header-wrapper nav{flex-flow:row;max-width:95%}.uicore-header-wrapper .uicore-extra,.uicore-navbar .uicore-nav-menu{display:none!important}.uicore-navbar .uicore-ham:not(.uicore-drawer-toggle){display:block!important}.uicore-custom-area-mobile{display:flex;flex-direction:column;height:inherit;justify-content:center}.uicore-main,.uicore-second{display:none}.uicore-mobile-main,.uicore-mobile-second{display:block}}@media (max-width:768px){.uicore-navigation-content a.uicore-social-icon:before{display:inline-block;font-size:clamp(18px,160%,30px);height:auto;margin:0;text-align:center;width:36px}.uicore-navbar.uicore-sticky{top:0!important}}@media (max-width:1300px){.uicore-custom-area .uicore-hca ul.uicore-menu li.menu-item>a,.uicore-navbar.uicore-h-classic .uicore-simple-megamenu>.sub-menu,.uicore-navbar:not(.uicore-left-menu) .uicore-nav-menu ul.uicore-menu li.menu-item>a{padding-left:calc(var(--uicore-header--menu-spaceing)*.75);padding-right:calc(var(--uicore-header--menu-spaceing)*.75)}.uicore-h-classic.uicore-navbar .uicore-menu>.menu-item-has-children>a:after{right:calc(var(--uicore-header--menu-spaceing)*.75)}}@media (max-width:1200px){.uicore-custom-area .uicore-hca ul.uicore-menu li.menu-item>a,.uicore-navbar.uicore-h-classic .uicore-simple-megamenu>.sub-menu,.uicore-navbar:not(.uicore-left-menu) .uicore-nav-menu ul.uicore-menu li.menu-item>a{padding-left:calc(var(--uicore-header--menu-spaceing)*.6);padding-right:calc(var(--uicore-header--menu-spaceing)*.6)}.uicore-h-classic.uicore-navbar .uicore-menu>.menu-item-has-children>a:after{right:calc(var(--uicore-header--menu-spaceing)*.6)}}@media (max-width:1025px){.ui-badge{padding:.4em .6em}}.uicore-page-title{background-size:cover;overflow:hidden}.uicore-page-title .uicore-overlay{bottom:0;left:0;position:absolute;right:0;top:0}.uicore-page-title .uicore-entry-meta{display:flex;flex-flow:wrap}.uicore-page-title .uicore{flex-direction:column}.uicore-page-title .uicore h1.uicore-title{margin:.4em 0}.uicore-page-title .uicore p{margin:0}.uicore-page-title .uicore .ui-blog-date,.uicore-page-title .uicore .ui-breadcrumb span a span,.uicore-page-title .uicore .uicore-description,.uicore-page-title .uicore .uicore-entry-meta a{opacity:.6}.uicore-page-title .uicore .ui-breadcrumb a:hover span,.uicore-page-title .uicore a:hover{opacity:1}.uicore-page-title .uicore .ui-breadcrumb a span{transition:opacity .3s ease;will-change:opacity}.uicore-page-title .uicore .uicore-separator:before{content:"";display:inline-block;font-size:10px;opacity:.5;padding:0 6px;transform:rotate(-90deg);vertical-align:middle}.ui-simple-creative{align-items:center;background:#fff;border-radius:6px;display:flex;flex-direction:column;margin:-7% -3vw 0;padding:3vw calc(10px + 3vw);text-align:center;width:calc(100% + 6vw)}@media only screen and (max-width:500px){.uicore-page-title .uicore-entry-meta{font-size:80%}}.uicore-navbar.uicore-transparent .uicore-header-wrapper{position:absolute;width:100%}@media (max-width:1025px){.uicore-navbar.uicore-transparent .uicore-header-wrapper{position:absolute;width:100%}}.uicore-transparent~#content header.uicore{padding-top:68px}.uicore-transparent~#content header.uicore{padding-top:68px}.uicore-navbar nav .uicore-nav{display:flex;justify-content:center}.uicore-navbar .uicore-header-wrapper{box-shadow:0 0 0 1px #fff0}.uicore-navbar .uicore-header-wrapper{box-shadow:0 0 0 1px rgb(155 155 155 / .2)}.uicore-transparent:not(.uicore-scrolled) .uicore-header-wrapper{box-shadow:0 0 0 1px rgb(155 155 155 / .2)}.uicore-transparent~#content header.uicore{padding-top:80px}@media only screen and (min-width:1025px){.uicore-navbar .uicore-header-wrapper:before{background:var(--uicore-white-color)}}.uicore-mobile-menu-wrapper:before,.uicore-wrapper.uicore-search.uicore-section{background:var(--uicore-white-color)}@media only screen and (max-width:1025px){.uicore-navbar .uicore-header-wrapper:before{background:var(--uicore-white-color)}}@media only screen and (max-width:1025px){.uicore-navigation-wrapper{background:var(--uicore-white-color)}}.uicore-cart-icon.uicore_hide_desktop #uicore-site-header-cart{color:var(--uicore-header--menu-typo-c)}@media only screen and (min-width:1025px){.uicore-navbar .uicore-extra{margin-left:25px}}.uicore-transparent:not(.uicore-scrolled){--uicore-header--menu-typo-c:#FFFFFF;--uicore-header--menu-typo-ch:var(--uicore-secondary-color)}body .uicore-transparent-color nav,.uicore-navbar{--uicore-header--logo-h:32px;--uicore-header--logo-padding:24px;--uicore-header--menu-spaceing:28px;--uicore-header--menu-typo-f:var(--uicore-secondary-font-family);--uicore-header--menu-typo-w:500;--uicore-header--menu-typo-h:80px;--uicore-header--menu-typo-ls:0em;--uicore-header--menu-typo-t:None;--uicore-header--menu-typo-st:normal;--uicore-header--menu-typo-c:var(--uicore-headline-color);--uicore-header--menu-typo-ch:var(--uicore-primary-color);--uicore-header--menu-typo-s:16px;--uicore-header--items-gap:25px}@media only screen and (min-width:1025px){.uicore-navbar li ul{--uicore-header--menu-typo-f:var(--uicore-secondary-font-family);--uicore-header--menu-typo-w:500;--uicore-header--menu-typo-h:80px;--uicore-header--menu-typo-ls:0em;--uicore-header--menu-typo-t:None;--uicore-header--menu-typo-st:normal;--uicore-header--menu-typo-c:var(--uicore-headline-color);--uicore-header--menu-typo-ch:var(--uicore-primary-color);--uicore-header--menu-typo-s:16px}}.uicore-ham .bar,#mini-nav .uicore-ham .bar{background-color:var(--uicore-header--menu-typo-c)}@media only screen and (min-width:1025px){.uicore-shrink:not(.uicore-scrolled){--uicore-header--logo-padding:32px;--uicore-header--menu-typo-h:96px}}@media (max-width:767px){.uicore-navbar{--uicore-header--logo-h:28px}#wrapper-navbar nav{max-width:95%}}@media (max-width:767px){.uicore-navbar .uicore-btn{font-size:18px;font-weight:500;font-style:normal;font-family:var(--uicore-secondary-font-family);letter-spacing:0em;text-transform:None}}.uicore-menu-left #uicore-page nav div .uicore ul a{padding:calc(56px / 2) 0}.uicore-menu-left #uicore-page nav div.uicore-extra .uicore-btn{margin:24px auto}.uicore-mobile-menu-wrapper-show .uicore-navigation-wrapper{color:var(--uicore-headline-color)}.uicore-navigation-content{height:calc(100% - 76px)}@media only screen and (max-width:1025px){.uicore-navbar .uicore-branding{margin:calc(var(--uicore-header--logo-padding) * 0.7) 0}}.uicore-sidebar .uicore-sticky{top:calc(calc(32px + calc(24px * 2)) + 60px)}@media (max-width:1025px){.uicore-navbar.uicore-sticky{position:relative}}@media (min-width:1025px){.uicore-navbar .uicore-cta-wrapper a{padding:clamp(12px,.9em,18px) clamp(24px,1.9em,26px)}}@media (max-width:1025px){.uicore-header-wrapper>nav>div .uicore-cta-wrapper a{padding:8px 14px;font-size:13px;line-height:16px}}.container-width .uicore-megamenu>.elementor,.custom-width .uicore-megamenu>.elementor{width:100%}ul.uicore-menu{--uicore-header--menu-effect-bg:var(--uicore-primary-color)}.uicore-page-title .uicore{align-items:center}.uicore-page-title div.uicore-animate{display:flex;justify-content:center}.uicore-page-title{text-align:center}.uicore-page-title .uicore-overlay{display:none}.uicore-page-title{background:var(--uicore-primary-color)}.uicore-page-title{background-size:cover;background-position:center}@media (max-width:1024px){.uicore-page-title.uicore-section>.uicore{padding:75px 0}}@media (min-width:1024px){.uicore-page-title.uicore-section>.uicore{padding:100px 0}.uicore-page-title h1.uicore-title,.uicore-page-title a,.uicore-page-title .uicore-desc-wrapp{max-width:50%}}@media (max-width:767px){.uicore-page-title.uicore-section>.uicore{padding:50px 0}}.uicore-page-title h1.uicore-title,.uicore-page-title a,.uicore-page-title p.uicore-description,.uicore-page-title a:hover,.uicore-page-title .uicore-entry-meta span,.uicore-page-title .uicore-entry-meta .uicore-post-category{color:#FFF}.uicore-page-title h1.uicore-title{text-transform:none}.uicore-page-title{border-radius:0;margin:0}.single-post .uicore-page-title p.uicore-description{font-size:120%;margin:-.6em 0 1.3em 0;opacity:.88}body{--uicore-typography--h1-f:var(--uicore-primary-font-family);--uicore-typography--h1-w:600;--uicore-typography--h1-h:1em;--uicore-typography--h1-ls:0em;--uicore-typography--h1-t:None;--uicore-typography--h1-st:normal;--uicore-typography--h1-c:var(--uicore-headline-color);--uicore-typography--h1-s:80px;--uicore-typography--h2-f:var(--uicore-primary-font-family);--uicore-typography--h2-w:600;--uicore-typography--h2-h:1.2em;--uicore-typography--h2-ls:0em;--uicore-typography--h2-t:None;--uicore-typography--h2-st:normal;--uicore-typography--h2-c:var(--uicore-headline-color);--uicore-typography--h2-s:56px;--uicore-typography--h3-f:var(--uicore-primary-font-family);--uicore-typography--h3-w:600;--uicore-typography--h3-h:1.3em;--uicore-typography--h3-ls:0em;--uicore-typography--h3-t:None;--uicore-typography--h3-st:normal;--uicore-typography--h3-c:var(--uicore-headline-color);--uicore-typography--h3-s:24px;--uicore-typography--h4-f:var(--uicore-primary-font-family);--uicore-typography--h4-w:600;--uicore-typography--h4-h:1.4em;--uicore-typography--h4-ls:0em;--uicore-typography--h4-t:None;--uicore-typography--h4-st:normal;--uicore-typography--h4-c:var(--uicore-headline-color);--uicore-typography--h4-s:20px;--uicore-typography--h5-f:var(--uicore-primary-font-family);--uicore-typography--h5-w:600;--uicore-typography--h5-h:1.4em;--uicore-typography--h5-ls:0em;--uicore-typography--h5-t:None;--uicore-typography--h5-st:normal;--uicore-typography--h5-c:var(--uicore-headline-color);--uicore-typography--h5-s:18px;--uicore-typography--h6-f:var(--uicore-text-font-family);--uicore-typography--h6-w:normal;--uicore-typography--h6-h:1.4em;--uicore-typography--h6-ls:0em;--uicore-typography--h6-t:none;--uicore-typography--h6-st:normal;--uicore-typography--h6-c:var(--uicore-headline-color);--uicore-typography--h6-s:14px;--uicore-typography--p-f:var(--uicore-text-font-family);--uicore-typography--p-w:normal;--uicore-typography--p-h:1.5em;--uicore-typography--p-ls:0em;--uicore-typography--p-t:None;--uicore-typography--p-st:normal;--uicore-typography--p-c:var(--uicore-body-color);--uicore-typography--p-s:18px}@media (max-width:1024px){body{--uicore-typography--h1-s:56px;--uicore-typography--h2-s:40px;--uicore-typography--h3-s:21px;--uicore-typography--h4-s:18px;--uicore-typography--h5-s:17px;--uicore-typography--h6-s:13px;--uicore-typography--p-s:16px}.uicore-single-header h1.entry-title{--uicore-typography--h1-s:56px}.uicore-blog .uicore-post-content:not(.uicore-archive) .entry-content{--uicore-typography--h1-s:48px;--uicore-typography--h2-s:34px;--uicore-typography--h3-s:26px;--uicore-typography--h4-s:18px;--uicore-typography--h5-s:15px;--uicore-typography--h6-s:13px;--uicore-typography--p-s:18px}.uicore-blog-grid{--uicore-typography--blog_title-s:21px;--uicore-typography--p-s:16px}}@media (max-width:767px){body{--uicore-typography--h1-s:44px;--uicore-typography--h2-s:30px;--uicore-typography--h3-s:19px;--uicore-typography--h4-s:16px;--uicore-typography--h5-s:16px;--uicore-typography--h6-s:12px;--uicore-typography--p-s:14px}.uicore-single-header h1.entry-title{--uicore-typography--h1-s:44px}.uicore-blog .uicore-post-content:not(.uicore-archive) .entry-content{--uicore-typography--h1-s:34px;--uicore-typography--h2-s:26px;--uicore-typography--h3-s:20px;--uicore-typography--h4-s:16px;--uicore-typography--h5-s:14px;--uicore-typography--h6-s:12px;--uicore-typography--p-s:16px}.uicore-blog-grid{--uicore-typography--blog_title-s:19px;--uicore-typography--p-s:14px}}:root body{--uicore-primary-color:#4F46E5;--uicore-secondary-color:#22C55E;--uicore-accent-color:#A965DF;--uicore-headline-color:#000000;--uicore-body-color:#525252;--uicore-dark-color:#000000;--uicore-light-color:rgba(79, 70, 229, 0.07);--uicore-white-color:#FFFFFF;--uicore-primary-font-family:"General Sans";--uicore-secondary-font-family:"General Sans";--uicore-accent-font-family:"General Sans";--uicore-text-font-family:"General Sans";--ui-border-color:#ebebeb;--uicore-boxed-width:100%;--ui-container-size:1200px;--ui-radius:25px;--ui-radius-sm:12.5px}.uicore-reveal .uicore-post-info,.ui-simple-creative,.uicore-fade-light .uicore-zoom-wrapper,.content-area,.uicore-body-content>footer,.uicore-main-background{background:var(--uicore-white-color)}.uicore-page-link.current,.uicore-pagination ul li a,.comment-list .says,blockquote,dt,.comment-meta .fn{color:var(--uicore-headline-color)}.uicore-body-content{background:var(--uicore-white-color)}a{color:var(--uicore-primary-color)}a:hover{color:var(--uicore-secondary-color)}.uicore-section.uicore-box nav.uicore-container,.uicore-section.uicore-box>.uicore-container,.uicore-ham-creative .uicore-navigation-content,.container-width .uicore-megamenu>.elementor,#wrapper-navbar.uicore-section.uicore-box .uicore-container .uicore-megamenu .uicore-section.uicore-box .uicore-container,#wrapper-navbar.uicore-section.uicore-section-full_width .uicore-container .uicore-megamenu .uicore-section.uicore-box .uicore-container,.elementor-section-boxed:not(.elementor-inner-section)>.elementor-container{max-width:var(--container-max-width)}.uicore-section,.elementor-section,.ui-sortable>.e-con,.elementor>.e-con{--container-max-width:min(95%, var(--ui-container-size))}#uicore-page{position:relative;z-index:0}body:before{content:"";display:block;background-image:url(https://uicore.pro/templates/yoride/wp-content/plugins/uicore-framework/assets/img/noise.webp);opacity:.15;background-repeat:repeat;background-size:257px auto;position:fixed;top:0;bottom:0;left:0;right:0;pointer-events:none;z-index:99999998}#uicore-back-to-top{background:var(--uicore-white-color)}.uicore-back-to-top{position:fixed;right:2em;bottom:2em;display:inline-block;z-index:999;transform:rotate(180deg) scale(1);font-size:15px;line-height:40px!important;width:40px;text-align:center;color:var(--uicore-headline-color);border-radius:100px;box-shadow:1px 0 22px -9px rgb(0 0 0 / .4);transition:all .3s cubic-bezier(.61,-.12,.08,1.55);cursor:pointer}.uicore-back-to-top:hover{transform:rotate(180deg) scale(1.1);box-shadow:0 0 20px -9px rgb(0 0 0 / .2);color:var(--uicore-headline-color)}.uicore-back-to-top:before{font-size:100%}.uicore-back-to-top:not(.uicore-visible){opacity:0;pointer-events:none;transform:rotate(180deg) scale(.3)}
+</style>
+<script src="https://uicore.pro/templates/yoride/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://uicore.pro/templates/yoride/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://uicore.pro/templates/yoride/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://uicore.pro/templates/yoride/wp-json/wp/v2/pages/29" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://uicore.pro/templates/yoride/xmlrpc.php?rsd" />
+
+<link rel="canonical" href="https://uicore.pro/templates/yoride/" />
+<link rel='shortlink' href='https://uicore.pro/templates/yoride/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://uicore.pro/templates/yoride/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fuicore.pro%2Ftemplates%2Fyoride%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://uicore.pro/templates/yoride/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fuicore.pro%2Ftemplates%2Fyoride%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.31.5; features: e_font_icon_svg, additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<meta name="theme-color" content="#4F46E5" />
+        <link rel="shortcut icon" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Favicon.png" >
+		<link rel="icon" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Favicon.png" >
+		<link rel="apple-touch-icon" sizes="152x152" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Favicon.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Favicon.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Favicon.png">
+        <link rel="apple-touch-icon" href="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Favicon.png">
+        			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style id='uicore-custom-fonts'> 
+ @font-face { font-family:"General Sans";src:url("https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Semibold.woff2") format('woff2'), url("https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Semibold.ttf") format('truetype'), url(https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Semibold.eot) format('opentype');font-display:auto;font-style:normal;font-weight:600;} @font-face { font-family:"General Sans";src:url("https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Regular.woff2") format('woff2'), url("https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Regular.ttf") format('truetype'), url(https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Regular.eot) format('opentype');font-display:auto;font-style:normal;font-weight:400;} @font-face { font-family:"General Sans";src:url("https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Medium.woff2") format('woff2'), url("https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Medium.ttf") format('truetype'), url(https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/GeneralSans-Medium.eot) format('opentype');font-display:auto;font-style:normal;font-weight:500;}
+ </style> 
+</head>
+
+<body class="home wp-singular page-template-default page page-id-29 wp-embed-responsive wp-theme-uicore-pro uicore-animate-fade ui-a-dsmm-slide  elementor-default elementor-kit-3 elementor-page elementor-page-29">
+		<div class="uicore-animation-bg"></div><!-- Custom HTML - Page Options --><!-- 1.1 uicore_before_body_content -->	<div class="uicore-body-content">
+		<!-- 1.2 uicore_before_page_content -->		<div id="uicore-page">
+		
+        <div data-uils="header" data-uils-title="Header" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky ui-smart-sticky uicore-shrink "><div class="uicore-header-wrapper">
+            <nav class="uicore uicore-container">
+            		 <div class="uicore-branding "
+              data-uils="header-branding"
+              data-uils-title="Site Logo"
+              >
+                
+			<a href="https://uicore.pro/templates/yoride/" rel="home">
+                <img class="uicore uicore-logo uicore-main" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo.webp" alt="YoRide" width="334" height="96"/>
+				<img class="uicore uicore-logo uicore-second" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo-2.webp" alt="YoRide" width="334" height="96"/>
+				<img class="uicore uicore-logo uicore-mobile-main" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo.webp" alt="YoRide" width="334" height="96"/>
+				<img loading="lazy" class="uicore uicore-logo uicore-mobile-second" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo-2.webp" alt="YoRide" width="334" height="96"/>
+			</a>
+
+		        </div>
+		        <div class='uicore-nav-menu'>
+            <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31"><a href="#why"><span class="ui-menu-item-wrapper">Why</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="#why"><span class="ui-menu-item-wrapper">Reliability You Can Trust</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="#why"><span class="ui-menu-item-wrapper">Exceptional Service</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="#why"><span class="ui-menu-item-wrapper">Customized to Your Needs</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="#how"><span class="ui-menu-item-wrapper">How</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#faq"><span class="ui-menu-item-wrapper">FAQ</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#app"><span class="ui-menu-item-wrapper">App</span></a></li>
+</ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">            <div class="uicore-cta-wrapper">
+				<a href="#"
+					target="_self"
+					class="uicore-btn uicore-inverted"
+                    >
+                    <span class="elementor-button-text">
+						Book a Ride                    </span>
+				</a>
+            </div>
+        </div>        </div>
+		<div class="uicore-mobile-head-right">            <div class="uicore-cta-wrapper">
+				<a href="#"
+					target="_self"
+					class="uicore-btn uicore-inverted"
+                    >
+                    <span class="elementor-button-text">
+						Book a Ride                    </span>
+				</a>
+            </div>
+                    <button type="button" class="uicore-toggle uicore-ham" aria-label="mobile-menu">
+                <span class="bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+        </div>            </nav>
+
+            </div>
+                    </div><!-- #wrapper-navbar end -->
+        <!-- 1.3 uicore_page -->			<div id="content" class="uicore-content">
+
+			<!-- 1.4 uicore_before_content --><div id="primary" class="content-area">
+
+	        <article id="post-29" class="post-29 page type-page status-publish hentry">
+            <main class="entry-content">
+                		<div data-elementor-type="wp-page" data-elementor-id="29" class="elementor elementor-29">
+				<div class="elementor-element elementor-element-5816124 e-flex e-con-boxed e-con e-parent" data-id="5816124" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c0aa940 e-con-full e-flex e-con e-child" data-id="c0aa940" data-element_type="container">
+				<div class="elementor-element elementor-element-7abf025 elementor-invisible elementor-widget elementor-widget-heading" data-id="7abf025" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;150&quot;}" data-widget_type="heading.default">
+					<h6 class="elementor-heading-title elementor-size-default">Seamless Travel Begins Here</h6>				</div>
+				<div class="elementor-element elementor-element-4ee7212 ui-e-a-animate elementor-invisible elementor-widget elementor-widget-highlighted-text" data-id="4ee7212" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="highlighted-text.default">
+					        <h1 class="ui-e--highlighted-text">
+            <span class="ui-e-headline-text elementor-repeater-item-f416bca">Elevate Your Travel Experience with </span><span class="ui-e-headline-text elementor-repeater-item-30c08f1 ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">YoRide</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
+    				</div>
+				<div class="elementor-element elementor-element-15150e0 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="15150e0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;250&quot;}" data-widget_type="text-editor.default">
+									Affordable, Reliable, and Convenient Transportation at Your Fingertips								</div>
+				<div class="elementor-element elementor-element-5d5aa93 elementor-mobile-align-justify elementor-invisible elementor-widget elementor-widget-button" data-id="5d5aa93" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;300&quot;}" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Book a Ride</span>
+					</span>
+					</a>
+								</div>
+		<div class="elementor-element elementor-element-8aa30c5 e-con-full e-flex elementor-invisible e-con e-child" data-id="8aa30c5" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;350&quot;}">
+				<div class="elementor-element elementor-element-6db1fd6 ui-e-counter-media-true ui-e-inline-true elementor-widget-mobile__width-initial ui-e-left ui-e-align-center ui-e-counter-simple elementor-widget elementor-widget-uicore-counter" data-id="6db1fd6" data-element_type="widget" data-settings="{&quot;counter_separator&quot;:&quot;,&quot;,&quot;decimal_symbol&quot;:&quot;.&quot;,&quot;count_start&quot;:120,&quot;duration&quot;:0.1000000000000000055511151231257827021181583404541015625,&quot;count_end&quot;:120,&quot;use_grouping&quot;:&quot;true&quot;,&quot;decimal_places&quot;:0,&quot;counter_animation&quot;:&quot;simple&quot;}" data-widget_type="uicore-counter.default">
+				<div class="elementor-widget-container">
+					            <div class="ui-e-ico">
+                <div class="ui-e-offset">
+                    <img loading="lazy" decoding="async" width="48" height="48" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Icon-1.webp" class="attachment-thumbnail size-thumbnail" alt="" />                </div>
+            </div>
+        <h4 class="ui-e-num"><span class="ui-e-prefix"></span><span class="value"> 0 </span><span class="ui-e-suffix"></span></h4><p class="ui-e-title">cities</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-57a79ce ui-e-counter-media-true ui-e-inline-true elementor-widget-mobile__width-initial ui-e-left ui-e-align-center ui-e-counter-simple elementor-widget elementor-widget-uicore-counter" data-id="57a79ce" data-element_type="widget" data-settings="{&quot;count_start&quot;:12,&quot;count_end&quot;:12,&quot;counter_separator&quot;:&quot;,&quot;,&quot;decimal_symbol&quot;:&quot;.&quot;,&quot;duration&quot;:0.1000000000000000055511151231257827021181583404541015625,&quot;use_grouping&quot;:&quot;true&quot;,&quot;decimal_places&quot;:0,&quot;counter_animation&quot;:&quot;simple&quot;}" data-widget_type="uicore-counter.default">
+				<div class="elementor-widget-container">
+					            <div class="ui-e-ico">
+                <div class="ui-e-offset">
+                    <img loading="lazy" decoding="async" width="48" height="48" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Icon-2.webp" class="attachment-thumbnail size-thumbnail" alt="" />                </div>
+            </div>
+        <h4 class="ui-e-num"><span class="ui-e-prefix"></span><span class="value"> 0 </span><span class="ui-e-suffix"></span></h4><p class="ui-e-title">Countries</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ed520ea ui-e-counter-media-true ui-e-inline-true elementor-widget-mobile__width-initial ui-e-left ui-e-align-center ui-e-counter-simple elementor-widget elementor-widget-uicore-counter" data-id="ed520ea" data-element_type="widget" data-settings="{&quot;count_start&quot;:500,&quot;count_end&quot;:500,&quot;counter_separator&quot;:&quot;,&quot;,&quot;decimal_symbol&quot;:&quot;.&quot;,&quot;counter_suffix&quot;:&quot;k&quot;,&quot;duration&quot;:0.1000000000000000055511151231257827021181583404541015625,&quot;use_grouping&quot;:&quot;true&quot;,&quot;decimal_places&quot;:0,&quot;counter_animation&quot;:&quot;simple&quot;}" data-widget_type="uicore-counter.default">
+				<div class="elementor-widget-container">
+					            <div class="ui-e-ico">
+                <div class="ui-e-offset">
+                    <img loading="lazy" decoding="async" width="48" height="48" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Icon-3.webp" class="attachment-thumbnail size-thumbnail" alt="" />                </div>
+            </div>
+        <h4 class="ui-e-num"><span class="ui-e-prefix"></span><span class="value"> 0 </span><span class="ui-e-suffix">k</span></h4><p class="ui-e-title">users</p>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-54ee939 e-con-full e-flex e-con e-child" data-id="54ee939" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-460f8f4 elementor-invisible elementor-widget elementor-widget-image" data-id="460f8f4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomOutRight&quot;,&quot;_animation_delay&quot;:&quot;1000&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="668" height="1216" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Image.webp" class="attachment-full size-full wp-image-9" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Image.webp 668w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Image-165x300.webp 165w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Image-563x1024.webp 563w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Hero-Image-357x650.webp 357w" sizes="(max-width: 668px) 100vw, 668px" />															</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-e7d80ca e-flex e-con-boxed e-con e-parent" data-id="e7d80ca" data-element_type="container" id="why">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-dc08061 e-con-full e-flex e-con e-child" data-id="dc08061" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f5db671 elementor-widget__width-initial ui-e-a-animate elementor-widget elementor-widget-highlighted-text" data-id="f5db671" data-element_type="widget" data-widget_type="highlighted-text.default">
+					        <h2 class="ui-e--highlighted-text">
+            <span class="ui-e-headline-text elementor-repeater-item-ee2e821">Why </span><span class="ui-e-headline-text elementor-repeater-item-c4ebb1b ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">choose </span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-ad8add0">YoRide?</span>        </h2>
+    				</div>
+				<div class="elementor-element elementor-element-2baf200 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="2baf200" data-element_type="widget" data-widget_type="text-editor.default">
+									We&#8217;re your dedicated partner in making every journey exceptional								</div>
+				<div class="elementor-element elementor-element-1edbd1d elementor-invisible elementor-widget elementor-widget-image" data-id="1edbd1d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="882" height="642" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Image.webp" class="attachment-full size-full wp-image-14" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Image.webp 882w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Image-300x218.webp 300w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Image-768x559.webp 768w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Image-650x473.webp 650w" sizes="(max-width: 882px) 100vw, 882px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-bd124b0 e-con-full e-flex e-con e-child" data-id="bd124b0" data-element_type="container">
+				<div class="elementor-element elementor-element-fb5c07b ui-e-left ui-e-align-left ui-e-align-tablet-left ui-e-align-mobile-left elementor-invisible elementor-widget elementor-widget-uicore-icon-box" data-id="fb5c07b" data-element_type="widget" data-settings="{&quot;position&quot;:&quot;left&quot;,&quot;content_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;32&quot;,&quot;right&quot;:&quot;32&quot;,&quot;bottom&quot;:&quot;64&quot;,&quot;left&quot;:&quot;32&quot;,&quot;isLinked&quot;:false},&quot;content_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;24&quot;,&quot;right&quot;:&quot;24&quot;,&quot;bottom&quot;:&quot;40&quot;,&quot;left&quot;:&quot;24&quot;,&quot;isLinked&quot;:false},&quot;content_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;20&quot;,&quot;right&quot;:&quot;20&quot;,&quot;bottom&quot;:&quot;24&quot;,&quot;left&quot;:&quot;36&quot;,&quot;isLinked&quot;:false},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="uicore-icon-box.default">
+					
+        <div class="ui-e-ico-box" >
+
+            
+            <div class='ui-e-flex-wrp'>
+
+                                    <div class="ui-e-icon-wrp">
+
+                        <img loading="lazy" decoding="async" width="162" height="162" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-1.webp" class="attachment-medium size-medium" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-1.webp 162w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-1-150x150.webp 150w" sizes="(max-width: 162px) 100vw, 162px" />
+                    </div>
+                
+                
+            </div>
+
+            <div class="ui-e-box-content">
+                <div class="ui-e-title-wrp"><h4 class="ui-e-title">Reliability You Can Trust</h4></div>
+                <div class="ui-e-description">
+                    Your safety and peace of mind are our top priorities.                 </div>
+
+                
+            </div>
+        </div>
+				</div>
+				<div class="elementor-element elementor-element-4d953ee ui-e-left ui-e-align-left ui-e-align-tablet-left ui-e-align-mobile-left elementor-invisible elementor-widget elementor-widget-uicore-icon-box" data-id="4d953ee" data-element_type="widget" data-settings="{&quot;position&quot;:&quot;left&quot;,&quot;content_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;32&quot;,&quot;right&quot;:&quot;32&quot;,&quot;bottom&quot;:&quot;64&quot;,&quot;left&quot;:&quot;32&quot;,&quot;isLinked&quot;:false},&quot;content_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;24&quot;,&quot;right&quot;:&quot;24&quot;,&quot;bottom&quot;:&quot;40&quot;,&quot;left&quot;:&quot;24&quot;,&quot;isLinked&quot;:false},&quot;content_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;20&quot;,&quot;right&quot;:&quot;20&quot;,&quot;bottom&quot;:&quot;24&quot;,&quot;left&quot;:&quot;36&quot;,&quot;isLinked&quot;:false},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="uicore-icon-box.default">
+					
+        <div class="ui-e-ico-box" >
+
+            
+            <div class='ui-e-flex-wrp'>
+
+                                    <div class="ui-e-icon-wrp">
+
+                        <img loading="lazy" decoding="async" width="162" height="162" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-2.webp" class="attachment-medium size-medium" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-2.webp 162w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-2-150x150.webp 150w" sizes="(max-width: 162px) 100vw, 162px" />
+                    </div>
+                
+                
+            </div>
+
+            <div class="ui-e-box-content">
+                <div class="ui-e-title-wrp"><h4 class="ui-e-title">Exceptional Service</h4></div>
+                <div class="ui-e-description">
+                    Commitment to excellence doesn't end with our vehicles.                </div>
+
+                
+            </div>
+        </div>
+				</div>
+				<div class="elementor-element elementor-element-96184a2 ui-e-left ui-e-align-left ui-e-align-tablet-left ui-e-align-mobile-left elementor-invisible elementor-widget elementor-widget-uicore-icon-box" data-id="96184a2" data-element_type="widget" data-settings="{&quot;position&quot;:&quot;left&quot;,&quot;content_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;32&quot;,&quot;right&quot;:&quot;32&quot;,&quot;bottom&quot;:&quot;64&quot;,&quot;left&quot;:&quot;32&quot;,&quot;isLinked&quot;:false},&quot;content_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;24&quot;,&quot;right&quot;:&quot;24&quot;,&quot;bottom&quot;:&quot;40&quot;,&quot;left&quot;:&quot;24&quot;,&quot;isLinked&quot;:false},&quot;content_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;20&quot;,&quot;right&quot;:&quot;20&quot;,&quot;bottom&quot;:&quot;24&quot;,&quot;left&quot;:&quot;36&quot;,&quot;isLinked&quot;:false},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="uicore-icon-box.default">
+					
+        <div class="ui-e-ico-box" >
+
+            
+            <div class='ui-e-flex-wrp'>
+
+                                    <div class="ui-e-icon-wrp">
+
+                        <img loading="lazy" decoding="async" width="162" height="162" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-3.webp" class="attachment-medium size-medium" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-3.webp 162w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Why-Icon-3-150x150.webp 150w" sizes="(max-width: 162px) 100vw, 162px" />
+                    </div>
+                
+                
+            </div>
+
+            <div class="ui-e-box-content">
+                <div class="ui-e-title-wrp"><h4 class="ui-e-title">Customized to Your Needs</h4></div>
+                <div class="ui-e-description">
+                    Choose the perfect vehicle for your occasion.                </div>
+
+                
+            </div>
+        </div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4abb2c7 e-flex e-con-boxed e-con e-parent" data-id="4abb2c7" data-element_type="container" id="how">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-faae135 ui-e-a-animate elementor-widget elementor-widget-highlighted-text" data-id="faae135" data-element_type="widget" data-widget_type="highlighted-text.default">
+					        <h2 class="ui-e--highlighted-text">
+            <span class="ui-e-headline-text elementor-repeater-item-ee2e821">How to </span><span class="ui-e-headline-text elementor-repeater-item-c4ebb1b ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">order</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h2>
+    				</div>
+		<div class="elementor-element elementor-element-58629c0 e-con-full e-flex e-con e-child" data-id="58629c0" data-element_type="container">
+		<div class="elementor-element elementor-element-466e008 e-con-full e-flex e-con e-child" data-id="466e008" data-element_type="container">
+				<div class="elementor-element elementor-element-ad74a8f elementor-widget__width-initial elementor-absolute e-transform e-transform elementor-invisible elementor-widget elementor-widget-heading" data-id="ad74a8f" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-18,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:&quot;500&quot;,&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">1</h2>				</div>
+		<div class="elementor-element elementor-element-2d1f066 e-con-full e-flex elementor-invisible e-con e-child" data-id="2d1f066" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;150&quot;}">
+				<div class="elementor-element elementor-element-a32db6c elementor-invisible elementor-widget elementor-widget-image" data-id="a32db6c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="549" height="652" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-1.webp" class="attachment-full size-full wp-image-18" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-1.webp 549w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-1-253x300.webp 253w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-1-547x650.webp 547w" sizes="(max-width: 549px) 100vw, 549px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-4960edc elementor-invisible elementor-widget elementor-widget-heading" data-id="4960edc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;250&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Enter Your Ride Details</h3>				</div>
+				<div class="elementor-element elementor-element-3fc3a8f elementor-invisible elementor-widget elementor-widget-text-editor" data-id="3fc3a8f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;300&quot;}" data-widget_type="text-editor.default">
+									Type in the address or use your current location, and choose your destination.								</div>
+				</div>
+		<div class="elementor-element elementor-element-937e15c e-con-full e-flex e-con e-child" data-id="937e15c" data-element_type="container">
+				<div class="elementor-element elementor-element-742bccc elementor-widget__width-initial elementor-absolute e-transform e-transform elementor-invisible elementor-widget elementor-widget-heading" data-id="742bccc" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-18,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:&quot;550&quot;,&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">2</h2>				</div>
+		<div class="elementor-element elementor-element-003575c e-con-full e-flex elementor-invisible e-con e-child" data-id="003575c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;200&quot;}">
+				<div class="elementor-element elementor-element-b927959 elementor-invisible elementor-widget elementor-widget-image" data-id="b927959" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;250&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="549" height="716" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-2.webp" class="attachment-full size-full wp-image-19" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-2.webp 549w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-2-230x300.webp 230w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-2-498x650.webp 498w" sizes="(max-width: 549px) 100vw, 549px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-1943bb4 elementor-invisible elementor-widget elementor-widget-heading" data-id="1943bb4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;300&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Select Your Pick up point</h3>				</div>
+				<div class="elementor-element elementor-element-274f230 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="274f230" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;350&quot;}" data-widget_type="text-editor.default">
+									You&#8217;ll see options to enter your pickup and drop-off locations.								</div>
+				</div>
+		<div class="elementor-element elementor-element-a18e91b e-con-full e-flex e-con e-child" data-id="a18e91b" data-element_type="container">
+				<div class="elementor-element elementor-element-0e1ea28 elementor-widget__width-initial elementor-absolute e-transform e-transform elementor-invisible elementor-widget elementor-widget-heading" data-id="0e1ea28" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-18,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:&quot;600&quot;,&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">3</h2>				</div>
+		<div class="elementor-element elementor-element-9a89f26 e-con-full e-flex elementor-invisible e-con e-child" data-id="9a89f26" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;250&quot;}">
+				<div class="elementor-element elementor-element-baa52a5 elementor-invisible elementor-widget elementor-widget-image" data-id="baa52a5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;300&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="548" height="715" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-3.webp" class="attachment-full size-full wp-image-20" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-3.webp 548w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-3-230x300.webp 230w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-3-498x650.webp 498w" sizes="(max-width: 548px) 100vw, 548px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-75f288a elementor-invisible elementor-widget elementor-widget-heading" data-id="75f288a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;350&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Select Your Ride &amp; Confirm</h3>				</div>
+				<div class="elementor-element elementor-element-f60bf47 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="f60bf47" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;400&quot;}" data-widget_type="text-editor.default">
+									Choose the vehicle type that best fits your occasion								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-182e40b e-con-full e-flex e-con e-child" data-id="182e40b" data-element_type="container">
+		<div class="elementor-element elementor-element-d4f5070 e-con-full e-flex e-con e-child" data-id="d4f5070" data-element_type="container">
+				<div class="elementor-element elementor-element-be1f9ee elementor-widget__width-initial elementor-absolute e-transform e-transform elementor-invisible elementor-widget elementor-widget-heading" data-id="be1f9ee" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-18,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:&quot;650&quot;,&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">4</h2>				</div>
+		<div class="elementor-element elementor-element-9b040be e-con-full e-flex elementor-invisible e-con e-child" data-id="9b040be" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;300&quot;}">
+				<div class="elementor-element elementor-element-c87b35d elementor-invisible elementor-widget elementor-widget-image" data-id="c87b35d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;350&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="548" height="677" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-4.webp" class="attachment-full size-full wp-image-21" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-4.webp 548w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-4-243x300.webp 243w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-4-526x650.webp 526w" sizes="(max-width: 548px) 100vw, 548px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-d118490 elementor-invisible elementor-widget elementor-widget-heading" data-id="d118490" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;400&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Track your Driver</h3>				</div>
+				<div class="elementor-element elementor-element-b903834 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="b903834" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;450&quot;}" data-widget_type="text-editor.default">
+									After confirming, the arrival of your driver in real time on the app&#8217;s map.								</div>
+				</div>
+		<div class="elementor-element elementor-element-05b8967 e-con-full e-flex e-con e-child" data-id="05b8967" data-element_type="container">
+				<div class="elementor-element elementor-element-4a06c5d elementor-widget__width-initial elementor-absolute e-transform e-transform elementor-invisible elementor-widget elementor-widget-heading" data-id="4a06c5d" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-18,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:&quot;700&quot;,&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">5</h2>				</div>
+		<div class="elementor-element elementor-element-c2c23b1 e-con-full e-flex elementor-invisible e-con e-child" data-id="c2c23b1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;350&quot;}">
+				<div class="elementor-element elementor-element-dc3e6aa elementor-invisible elementor-widget elementor-widget-image" data-id="dc3e6aa" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;400&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="548" height="691" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-5.webp" class="attachment-full size-full wp-image-22" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-5.webp 548w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-5-238x300.webp 238w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-How-Image-5-515x650.webp 515w" sizes="(max-width: 548px) 100vw, 548px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-2f60726 elementor-invisible elementor-widget elementor-widget-heading" data-id="2f60726" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;450&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Track Your Ride</h3>				</div>
+				<div class="elementor-element elementor-element-f2fb880 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="f2fb880" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;500&quot;}" data-widget_type="text-editor.default">
+									Receive information about your driver, including their name and vehicle details.								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ff4252b e-con-full e-flex e-con e-parent" data-id="ff4252b" data-element_type="container" id="faq">
+		<div class="elementor-element elementor-element-654e007 e-con-full e-flex e-con e-child" data-id="654e007" data-element_type="container">
+				<div class="elementor-element elementor-element-ca36d5f elementor-invisible elementor-widget elementor-widget-image" data-id="ca36d5f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="548" height="621" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-FAQ-Image-1.webp" class="attachment-full size-full wp-image-23" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-FAQ-Image-1.webp 548w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-FAQ-Image-1-265x300.webp 265w" sizes="(max-width: 548px) 100vw, 548px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-9e269e0 e-con-full e-flex e-con e-child" data-id="9e269e0" data-element_type="container">
+				<div class="elementor-element elementor-element-8d20826 ui-e-a-animate elementor-widget elementor-widget-highlighted-text" data-id="8d20826" data-element_type="widget" data-widget_type="highlighted-text.default">
+					        <h2 class="ui-e--highlighted-text">
+            <span class="ui-e-headline-text elementor-repeater-item-c4ebb1b ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">FAQs</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h2>
+    				</div>
+				<div class="elementor-element elementor-element-2a3e0d5 ui-e-animation-ico-slide ui-e-animation-acc-basic elementor-widget elementor-widget-uicore-accordion" data-id="2a3e0d5" data-element_type="widget" data-settings="{&quot;collapsible&quot;:&quot;true&quot;,&quot;active_hash&quot;:&quot;no&quot;,&quot;accordion_animation&quot;:&quot;ui-e-animation-acc-basic&quot;}" data-widget_type="uicore-accordion.default">
+				<div class="elementor-widget-container">
+					        <div class="ui-e-accordion" >
+
+                            <div class="ui-e-accordion-item ui-e-item ui-open" role="button" tabindex="0" aria-expanded="true" aria-controls="ui-e-acc-1" id="ui-e-how-can-i-track-my-drivers-location">
+
+                    <h3 class="ui-e-accordion-title ui-e-title ui-right">
+
+                                                    <span class="ui-e-accordion-icon ui-e-icon ui-e-right" aria-hidden="true">
+
+                                <span class="ui-e-accordion-icon-closed">
+                                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>                                </span>
+
+                                                                    <span class="ui-e-accordion-icon-opened">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>                                    </span>
+                                
+                            </span>
+                        
+                                                <span class="ui-e-accordion-title-text ui-e-title-text" >
+                                                        How can I track my driver&#039;s location?                        </span>
+
+                    </h3>
+
+                    <div class="ui-e-accordion-content ui-e-content" style="" aria-labelledby="ui-e-how-can-i-track-my-drivers-location" id="ui-e-acc-1">
+                        You can track your driver&#8217;s location in real-time via the app. After booking a ride, you&#8217;ll see a map displaying your driver&#8217;s progress towards your location.                    </div>
+
+                </div>
+                            <div class="ui-e-accordion-item ui-e-item" role="button" tabindex="0" aria-expanded="false" aria-controls="ui-e-acc-2" id="ui-e-can-i-schedule-rides-in-advance">
+
+                    <h3 class="ui-e-accordion-title ui-e-title ui-right">
+
+                                                    <span class="ui-e-accordion-icon ui-e-icon ui-e-right" aria-hidden="true">
+
+                                <span class="ui-e-accordion-icon-closed">
+                                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>                                </span>
+
+                                                                    <span class="ui-e-accordion-icon-opened">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>                                    </span>
+                                
+                            </span>
+                        
+                                                <span class="ui-e-accordion-title-text ui-e-title-text" >
+                                                        Can I schedule rides in advance?                        </span>
+
+                    </h3>
+
+                    <div class="ui-e-accordion-content ui-e-content" style="display:none;" aria-labelledby="ui-e-can-i-schedule-rides-in-advance" id="ui-e-acc-2">
+                        You can track your driver&#8217;s location in real-time via the app. After booking a ride, you&#8217;ll see a map displaying your driver&#8217;s progress towards your location.                    </div>
+
+                </div>
+                            <div class="ui-e-accordion-item ui-e-item" role="button" tabindex="0" aria-expanded="false" aria-controls="ui-e-acc-3" id="ui-e-is-there-a-cancellation-fee">
+
+                    <h3 class="ui-e-accordion-title ui-e-title ui-right">
+
+                                                    <span class="ui-e-accordion-icon ui-e-icon ui-e-right" aria-hidden="true">
+
+                                <span class="ui-e-accordion-icon-closed">
+                                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>                                </span>
+
+                                                                    <span class="ui-e-accordion-icon-opened">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>                                    </span>
+                                
+                            </span>
+                        
+                                                <span class="ui-e-accordion-title-text ui-e-title-text" >
+                                                        Is there a cancellation fee?                        </span>
+
+                    </h3>
+
+                    <div class="ui-e-accordion-content ui-e-content" style="display:none;" aria-labelledby="ui-e-is-there-a-cancellation-fee" id="ui-e-acc-3">
+                        You can track your driver&#8217;s location in real-time via the app. After booking a ride, you&#8217;ll see a map displaying your driver&#8217;s progress towards your location.                    </div>
+
+                </div>
+                            <div class="ui-e-accordion-item ui-e-item" role="button" tabindex="0" aria-expanded="false" aria-controls="ui-e-acc-4" id="ui-e-how-can-i-contact-my-driver">
+
+                    <h3 class="ui-e-accordion-title ui-e-title ui-right">
+
+                                                    <span class="ui-e-accordion-icon ui-e-icon ui-e-right" aria-hidden="true">
+
+                                <span class="ui-e-accordion-icon-closed">
+                                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>                                </span>
+
+                                                                    <span class="ui-e-accordion-icon-opened">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>                                    </span>
+                                
+                            </span>
+                        
+                                                <span class="ui-e-accordion-title-text ui-e-title-text" >
+                                                        How can I contact my driver?                        </span>
+
+                    </h3>
+
+                    <div class="ui-e-accordion-content ui-e-content" style="display:none;" aria-labelledby="ui-e-how-can-i-contact-my-driver" id="ui-e-acc-4">
+                        You can track your driver&#8217;s location in real-time via the app. After booking a ride, you&#8217;ll see a map displaying your driver&#8217;s progress towards your location.                    </div>
+
+                </div>
+                    </div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e76e643 e-con-full e-flex e-con e-child" data-id="e76e643" data-element_type="container">
+				<div class="elementor-element elementor-element-3d4a819 elementor-invisible elementor-widget elementor-widget-image" data-id="3d4a819" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="494" height="666" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-FAQ-Image-2.webp" class="attachment-full size-full wp-image-24" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-FAQ-Image-2.webp 494w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-FAQ-Image-2-223x300.webp 223w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-FAQ-Image-2-482x650.webp 482w" sizes="(max-width: 494px) 100vw, 494px" />															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-0af03c2 e-flex e-con-boxed e-con e-parent" data-id="0af03c2" data-element_type="container" id="app">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3a2663b e-con-full e-flex e-con e-child" data-id="3a2663b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-66e29ef elementor-widget elementor-widget-heading" data-id="66e29ef" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Download the app now</h2>				</div>
+				<div class="elementor-element elementor-element-b48e681 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="b48e681" data-element_type="widget" data-widget_type="text-editor.default">
+									Take the first step towards stress-free, efficient travel.								</div>
+		<div class="elementor-element elementor-element-be68184 e-con-full e-flex e-con e-child" data-id="be68184" data-element_type="container">
+				<div class="elementor-element elementor-element-8086911 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="8086911" data-element_type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="319" height="116" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Store.webp" class="elementor-animation-grow attachment-full size-full wp-image-25" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Store.webp 319w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Store-300x109.webp 300w" sizes="(max-width: 319px) 100vw, 319px" />															</div>
+				<div class="elementor-element elementor-element-6b789d3 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="6b789d3" data-element_type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="312" height="116" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Google-Play.webp" class="elementor-animation-grow attachment-full size-full wp-image-26" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Google-Play.webp 312w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Google-Play-300x112.webp 300w" sizes="(max-width: 312px) 100vw, 312px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-6f0601b elementor-invisible elementor-widget elementor-widget-image" data-id="6f0601b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="754" height="548" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-2.webp" class="attachment-full size-full wp-image-28" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-2.webp 754w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-2-300x218.webp 300w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-2-650x472.webp 650w" sizes="(max-width: 754px) 100vw, 754px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-8462dd6 e-con-full e-flex e-con e-child" data-id="8462dd6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8d8deaa elementor-invisible elementor-widget elementor-widget-image" data-id="8d8deaa" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="796" height="1026" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image.webp" class="attachment-full size-full wp-image-27" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image.webp 796w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-233x300.webp 233w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-794x1024.webp 794w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-768x990.webp 768w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-App-Image-504x650.webp 504w" sizes="(max-width: 796px) 100vw, 796px" />															</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		            </main>
+        </article>
+        
+</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	            <footer id="uicore-tb-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+			    		<div data-elementor-type="uicore-tb" data-elementor-id="30" class="elementor elementor-30">
+				<div class="elementor-element elementor-element-dbe18c3 e-flex e-con-boxed e-con e-parent" data-id="dbe18c3" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-2d2d18b e-con-full e-flex e-con e-child" data-id="2d2d18b" data-element_type="container">
+		<div class="elementor-element elementor-element-046005c e-con-full e-flex e-con e-child" data-id="046005c" data-element_type="container">
+				<div class="elementor-element elementor-element-d27557e elementor-widget elementor-widget-heading" data-id="d27557e" data-element_type="widget" data-widget_type="heading.default">
+					<h5 class="elementor-heading-title elementor-size-default">Product</h5>				</div>
+				<div class="elementor-element elementor-element-6691690 elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6691690" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">YoRide Casual</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">YoRide Plus</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">YoRide Electric</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">YoRide Mativ</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-6a5b51e e-con-full e-flex e-con e-child" data-id="6a5b51e" data-element_type="container">
+				<div class="elementor-element elementor-element-19fa9ed elementor-widget elementor-widget-heading" data-id="19fa9ed" data-element_type="widget" data-widget_type="heading.default">
+					<h5 class="elementor-heading-title elementor-size-default">Support</h5>				</div>
+				<div class="elementor-element elementor-element-a49ecea elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a49ecea" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">FAQs</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Contact Support</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Forums</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-e82b207 e-con-full e-flex e-con e-child" data-id="e82b207" data-element_type="container">
+				<div class="elementor-element elementor-element-9dabdb0 elementor-widget elementor-widget-heading" data-id="9dabdb0" data-element_type="widget" data-widget_type="heading.default">
+					<h5 class="elementor-heading-title elementor-size-default">Career</h5>				</div>
+				<div class="elementor-element elementor-element-e27fca1 elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e27fca1" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Job listing</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Our Team</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Hiring Process</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-7daec04 e-con-full e-flex e-con e-child" data-id="7daec04" data-element_type="container">
+				<div class="elementor-element elementor-element-337a6ba elementor-widget elementor-widget-heading" data-id="337a6ba" data-element_type="widget" data-widget_type="heading.default">
+					<h5 class="elementor-heading-title elementor-size-default">Blog</h5>				</div>
+				<div class="elementor-element elementor-element-5ae91bc elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5ae91bc" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Latest Post</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Product Reviews</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Company News</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-1ec6803 e-con-full e-flex e-con e-child" data-id="1ec6803" data-element_type="container">
+				<div class="elementor-element elementor-element-d39cec0 elementor-widget elementor-widget-heading" data-id="d39cec0" data-element_type="widget" data-widget_type="heading.default">
+					<h5 class="elementor-heading-title elementor-size-default">Follow us</h5>				</div>
+				<div class="elementor-element elementor-element-31d50e9 e-grid-align-left e-grid-align-tablet-center e-grid-align-mobile-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="31d50e9" data-element_type="widget" data-widget_type="social-icons.default">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-square elementor-repeater-item-be5977b" target="_blank">
+						<span class="elementor-screen-only">Facebook-square</span>
+						<svg class="e-font-icon-svg e-fab-facebook-square" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-7bd2f0f" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-b7c3e07" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-tiktok elementor-repeater-item-f0774df" target="_blank">
+						<span class="elementor-screen-only">Tiktok</span>
+						<svg class="e-font-icon-svg e-fab-tiktok" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				<div class="elementor-element elementor-element-3dd25b3 elementor-widget elementor-widget-text-editor" data-id="3dd25b3" data-element_type="widget" data-widget_type="text-editor.default">
+									1234 Main Street, Suite 567 Anytown, USA 12345								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-526eb6e e-con-full e-flex e-con e-child" data-id="526eb6e" data-element_type="container">
+				<div class="elementor-element elementor-element-c94bf5d elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image" data-id="c94bf5d" data-element_type="widget" data-widget_type="image.default">
+															<img width="334" height="96" src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo.webp" class="attachment-full size-full wp-image-6" alt="" srcset="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo.webp 334w, https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo-300x86.webp 300w" sizes="(max-width: 334px) 100vw, 334px" />															</div>
+				<div class="elementor-element elementor-element-e137547 elementor-icon-list--layout-inline elementor-align-center elementor-widget-tablet__width-inherit elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e137547" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Privacy Policy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Terms of Service</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Security</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Data Record</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-d53534b elementor-icon-list--layout-inline elementor-align-right elementor-tablet-align-center elementor-widget-tablet__width-inherit elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d53534b" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://uicore.co/">
+
+											<span class="elementor-icon-list-text">© UiCore</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				    </footer>
+            <!-- 1.5 uicore_content_end -->
+</div><!-- #page -->
+
+
+
+  <div class="ui-link-helper">
+    <a class="ui-tooltip-link" href="https://uicore.pro/?utm_campaign=UiCorePro&utm_source=Demos&utm_medium=LinkHelper" target="_blank">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M32 24.34a6 6 0 11-4 0V14a2 2 0 014 0v10.34zm-12-.68V34a2 2 0 01-4 0V23.66a6 6 0 114 0zM12 4h24a8 8 0 018 8v24a8 8 0 01-8 8H12a8 8 0 01-8-8V12a8 8 0 018-8zm0 4a4 4 0 00-4 4v24a4 4 0 004 4h24a4 4 0 004-4V12a4 4 0 00-4-4H12zm6 12a2 2 0 100-4 2 2 0 000 4zm12 12a2 2 0 100-4 2 2 0 000 4z" fill="#1C1C1C" fill-rule="nonzero"/></svg>
+      <span class="ui-tooltip">Features
+        <span></span>
+      </span>
+    </a>
+    <a class="ui-tooltip-link" href="https://help.uicore.co/docs/theme-installation?utm_campaign=UiCorePro&utm_source=Demos&utm_medium=LinkHelper" target="_blank">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 39.95L11.13 37.1A4 4 0 018 33.2V12a4 4 0 014-4h6a2 2 0 100-4h-6a8 8 0 00-8 8v21.19a8 8 0 006.26 7.8L24 44.06 37.74 41A8 8 0 0044 33.19V12a8 8 0 00-8-8h-6a8 8 0 00-8 8v22a2 2 0 004 0V12a4 4 0 014-4h6a4 4 0 014 4v21.19a4 4 0 01-3.13 3.9L24 39.95z" fill="#1C1C1C" fill-rule="nonzero"/></svg>
+      <span class="ui-tooltip">Read Documentation
+        <span></span>
+      </span>
+    </a>
+      <a class="ui-tooltip-link" href="https://help.uicore.co?utm_campaign=UiCorePro&utm_source=Demos&utm_medium=LinkHelper" target="_blank">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 42a2 2 0 01-4 0v-2a8 8 0 018-8h8a4 4 0 004-4V12a4 4 0 00-4-4H12a4 4 0 00-4 4v16a4 4 0 004 4h2a2 2 0 010 4h-2a8 8 0 01-8-8V12a8 8 0 018-8h24a8 8 0 018 8v16a8 8 0 01-8 8h-8a4 4 0 00-4 4v2zm0-20a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4zm16 0a2 2 0 110-4 2 2 0 010 4z" fill="#1C1C1C" fill-rule="nonzero"/></svg>
+      <span class="ui-tooltip">Support
+        <span></span>
+      </span>
+    </a>
+    <a class="ui-tooltip-link" href="https://my.uicore.co/checkout/?utm_campaign=UiCorePro&utm_source=Demos&utm_medium=LinkHelper" target="_blank">
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 8a2 2 0 110-4h2a8 8 0 018 8v16a4 4 0 004 4h16a4 4 0 004-4v-8a4 4 0 00-4-4H22a2 2 0 110-4h14a8 8 0 018 8v8a8 8 0 01-8 8H20a8 8 0 01-8-8V12a4 4 0 00-4-4H6zm31 36a3 3 0 110-6 3 3 0 010 6zm-18 0a3 3 0 110-6 3 3 0 010 6z" fill="#1C1C1C" fill-rule="nonzero"/></svg>
+      <span class="ui-tooltip">Purchase UiCorePro
+        <span></span>
+      </span>
+    </a>
+  </div>
+<div id="uicore-back-to-top" class="uicore-back-to-top uicore-i-arrow uicore_hide_mobile "></div>        <div class="uicore-navigation-wrapper uicore-navbar uicore-section uicore-box uicore-mobile-menu-wrapper
+                ">
+			<nav class="uicore uicore-container">
+				<div class="uicore-branding uicore-mobile">
+                                            <a href="https://uicore.pro/templates/yoride/" rel="home">
+                            <img class="uicore uicore-logo"  src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/2025/07/Mobile-App-Logo.webp" alt="YoRide"/>
+                        </a>
+                    				</div>
+
+
+                <div class="uicore-branding uicore-desktop">
+                    				</div>
+
+
+
+                <div class="uicore-mobile-head-right">
+                    
+
+                    <button type="button" class="uicore-toggle uicore-ham" aria-label="mobile-menu">
+                        <span class="bars">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </span>
+                    </button>
+                </div>
+			</nav>
+			<div class="uicore-navigation-content">
+                <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31"><a href="#why"><span class="ui-menu-item-wrapper">Why</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="#why"><span class="ui-menu-item-wrapper">Reliability You Can Trust</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="#why"><span class="ui-menu-item-wrapper">Exceptional Service</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="#why"><span class="ui-menu-item-wrapper">Customized to Your Needs</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="#how"><span class="ui-menu-item-wrapper">How</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#faq"><span class="ui-menu-item-wrapper">FAQ</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#app"><span class="ui-menu-item-wrapper">App</span></a></li>
+</ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">            <div class="uicore-cta-wrapper">
+				<a href="#"
+					target="_self"
+					class="uicore-btn uicore-inverted"
+                    >
+                    <span class="elementor-button-text">
+						Book a Ride                    </span>
+				</a>
+            </div>
+        </div>            </div>
+		</div>
+		<!-- 1.6 uicore_body_end --></div>
+<!-- 1.7 uicore_after_body_content --><script> 
+var uicore_frontend = {'back':'Back', 'rtl' : '','mobile_br' : '1025'};
+ console.log( 'Using UiCore Pro v.2.2.4');
+ console.log( 'Powered By UiCore Framework v.6.2.4');
+ </script> <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/templates\/yoride\/*"},{"not":{"href_matches":["\/templates\/yoride\/wp-*.php","\/templates\/yoride\/wp-admin\/*","\/templates\/yoride\/wp-content\/uploads\/sites\/119\/*","\/templates\/yoride\/wp-content\/*","\/templates\/yoride\/wp-content\/plugins\/*","\/templates\/yoride\/wp-content\/themes\/uicore-pro\/*","\/templates\/yoride\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='elementor-post-30-css' href='https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/elementor/css/post-30.css?ver=1757680248' media='all' />
+<link rel='stylesheet' id='ui-e-highlighted-text-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/css/elements/highlighted-text.css?ver=1.3.5' media='all' />
+<link rel='stylesheet' id='ui-e-counter-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/css/elements/counter.css?ver=1.3.5' media='all' />
+<link rel='stylesheet' id='ui-e-icon-box-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/css/elements/icon-box.css?ver=1.3.5' media='all' />
+<link rel='stylesheet' id='ui-e-accordion-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/css/elements/accordion.css?ver=1.3.5' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.31.5' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.31.5' media='all' />
+<script src="https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.31.5" id="elementor-webpack-runtime-js"></script>
+<script src="https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.31.5" id="elementor-frontend-modules-js"></script>
+<script src="https://uicore.pro/templates/yoride/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.31.5","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"nested-elements":true,"e_element_cache":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true},"urls":{"assets":"https:\/\/uicore.pro\/templates\/yoride\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/uicore.pro\/templates\/yoride\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/uicore.pro\/templates\/yoride\/wp-content\/uploads\/sites\/119"},"nonces":{"floatingButtonsClickTracking":"15458bcebd"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":29,"title":"YoRide%20%E2%80%93%20UiCore%20Pro%20WordPress%20Theme","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://uicore.pro/templates/yoride/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.31.5" id="elementor-frontend-js"></script>
+<script src="https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/js/lib/countUp.umd.js?ver=1.3.5" id="ui-e-countup-js"></script>
+<script src="https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/js/components/global-counter.js?ver=1.3.5" id="ui-e-counter-js"></script>
+<script src="https://uicore.pro/templates/yoride/wp-content/uploads/sites/119/uicore-global.js?ver=7734" id="uicore_global-js" defer></script>
+<script src="https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/js/elements/highlighted-text.js?ver=1.3.5" id="ui-e-highlighted-text-js"></script>
+<script src="https://uicore.pro/templates/yoride/wp-content/plugins/uicore-elements/assets/js/elements/accordion.js?ver=1.3.5" id="ui-e-accordion-js"></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4HRCJB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->        <style>
+            .uicore-animate-scroll {
+                animation-fill-mode: both;
+                animation-timing-function: linear;
+                animation-timeline: view(block);
+            }
+        </style>
+        <script>
+            (function() {
+                const supportsAnimationTimeline = CSS.supports("animation-timeline", "scroll()");
+
+                if (!supportsAnimationTimeline && document.querySelector('.uicore-animate-scroll')) {
+                    const script = document.createElement('script');
+                    script.src = "https://uicore.pro/templates/yoride/wp-content/plugins/uicore-animate/assets/js/scroll-timeline.js";
+                    script.async = true;
+                    document.head.appendChild(script);
+                }
+            })();
+        </script>
+</body>
+</html>
